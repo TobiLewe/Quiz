@@ -184,6 +184,12 @@ function zeigeAntwort() {
   }
 }
 
+function vorherigeFrage() {
+  const quiz = quizzes[aktuellesQuiz];
+  aktuelleFrage = (aktuelleFrage - 1 + quiz.length) % quiz.length;
+  anzeigen();
+}
+
 function naechsteFrage() {
   const quiz = quizzes[aktuellesQuiz];
   aktuelleFrage = (aktuelleFrage + 1) % quiz.length;
