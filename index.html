@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fragen & Antworten</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="container">
-    <h1>Fragen & Antworten</h1>
+<div class="container">
+  <h1>Prüfungsfragen</h1>
 
-    <div class="quiz-buttons">
-      <button class="quiz-button active" data-quiz="0">Quiz 1</button>
-      <button class="quiz-button" data-quiz="1">Quiz 2</button>
-      <button class="quiz-button" data-quiz="2">Quiz 3</button>
-    </div>
+  <div class="quiz-buttons">
+    <button type="button" onclick="wechselQuiz(0)">Quiz 1</button>
+    <button type="button" onclick="wechselQuiz(1)">Quiz 2</button>
+    <button type="button" onclick="wechselQuiz(2)">Quiz 3</button>
+  </div>
 
-    <section class="card">
-      <div class="counter" id="counter">Frage 1 von 13</div>
-      <div class="question" id="question"></div>
+  <div class="card">
+    <div id="fortschritt">Frage 1 von 13</div>
+    <h2 id="frage"></h2>
 
-      <button id="answerButton" type="button">Antwort anzeigen</button>
+    <button type="button" id="antwortButton" onclick="zeigeAntwort()">Antwort anzeigen</button>
 
-      <div class="answer hidden" id="answer"></div>
+    <div id="antwort" class="antwort"></div>
 
-      <button class="next hidden" id="nextButton" type="button">Nächste Frage</button>
-    </section>
-  </main>
-
-  <script src="script.js"></script>
+    <button type="button" id="weiterButton" onclick="naechsteFrage()">Nächste Frage</button>
+  </div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
