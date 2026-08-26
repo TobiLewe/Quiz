@@ -20,12 +20,13 @@
     <div id="fortschritt">Frage 1 von 13</div>
     <h2 id="frage"></h2>
 
-    <button type="button" id="antwortButton" onclick="zeigeAntwort()">Antwort anzeigen</button>
+    <div class="aktionen">
+      <button type="button" id="antwortButton" onclick="zeigeAntwort()">Antwort anzeigen</button>
+      <button type="button" id="zurueckButton" onclick="vorherigeFrage()">Vorherige Frage</button>
+      <button type="button" id="weiterButton" onclick="naechsteFrage()">Nächste Frage</button>
+    </div>
 
     <div id="antwort" class="antwort"></div>
-
-    <button type="button" id="zurueckButton" onclick="vorherigeFrage()">Vorherige Frage</button>
-    <button type="button" id="weiterButton" onclick="naechsteFrage()">Nächste Frage</button>
   </div>
 </div>
 <script src="script.js"></script>
