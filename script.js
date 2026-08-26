@@ -142,45 +142,47 @@ const quizzes = [
 let aktuellesQuiz = 0;
 let aktuelleFrage = 0;
 
+const frageElement = document.getElementById("frage");
+const fortschrittElement = document.getElementById("fortschritt");
+const antwortElement = document.getElementById("antwort");
+const antwortButton = document.getElementById("antwortButton");
+
+document.getElementById("zurueckButton").addEventListener("click", vorherigeFrage);
+document.getElementById("weiterButton").addEventListener("click", naechsteFrage);
+antwortButton.addEventListener("click", zeigeAntwort);
+
 function anzeigen() {
   const quiz = quizzes[aktuellesQuiz];
   const item = quiz[aktuelleFrage];
 
-  document.getElementById("fortschritt").textContent =
-    `Frage ${aktuelleFrage + 1} von ${quiz.length}`;
+  frageElement.textContent = item.frage;
+  fortschrittElement.textContent = `Frage ${aktuelleFrage + 1} von ${quiz.length}`;
 
-  document.getElementById("frage").textContent = item.frage;
+  antwortElement.textContent = "";
+  antwortElement.style.display = "none";
+  antwortButton.textContent = "Antwort anzeigen";
 
-  const antwort = document.getElementById("antwort");
-  antwort.textContent = "";
-  antwort.style.display = "none";
-
-  document.getElementById("antwortButton").textContent = "Antwort anzeigen";
-
-  document.querySelectorAll(".quiz-buttons button").forEach((button, index) => {
+  document.querySelectorAll(".quiz-btn").forEach((button, index) => {
     button.classList.toggle("aktiv", index === aktuellesQuiz);
   });
 }
 
 function wechselQuiz(index) {
-  if (index < 0 || index >= quizzes.length) return;
   aktuellesQuiz = index;
   aktuelleFrage = 0;
   anzeigen();
 }
 
 function zeigeAntwort() {
-  const quiz = quizzes[aktuellesQuiz];
-  const antwort = document.getElementById("antwort");
-  const button = document.getElementById("antwortButton");
+  const item = quizzes[aktuellesQuiz][aktuelleFrage];
 
-  if (antwort.style.display === "block") {
-    antwort.style.display = "none";
-    button.textContent = "Antwort anzeigen";
+  if (antwortElement.style.display === "block") {
+    antwortElement.style.display = "none";
+    antwortButton.textContent = "Antwort anzeigen";
   } else {
-    antwort.textContent = quiz[aktuelleFrage].antwort;
-    antwort.style.display = "block";
-    button.textContent = "Antwort ausblenden";
+    antwortElement.textContent = item.antwort;
+    antwortElement.style.display = "block";
+    antwortButton.textContent = "Antwort ausblenden";
   }
 }
 
@@ -196,4 +198,4 @@ function naechsteFrage() {
   anzeigen();
 }
 
-document.addEventListener("DOMContentLoaded", anzeigen);
+anzeigen();

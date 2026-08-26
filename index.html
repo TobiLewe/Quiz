@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Quiz</title>
+<title>Prüfungsfragen</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,24 +11,25 @@
   <h1>Prüfungsfragen</h1>
 
   <div class="quiz-buttons">
-    <button type="button" onclick="wechselQuiz(0)">Quiz 1</button>
-    <button type="button" onclick="wechselQuiz(1)">Quiz 2</button>
-    <button type="button" onclick="wechselQuiz(2)">Quiz 3</button>
+    <button type="button" class="quiz-btn" onclick="wechselQuiz(0)">Quiz 1</button>
+    <button type="button" class="quiz-btn" onclick="wechselQuiz(1)">Quiz 2</button>
+    <button type="button" class="quiz-btn" onclick="wechselQuiz(2)">Quiz 3</button>
   </div>
 
   <div class="card">
     <div id="fortschritt">Frage 1 von 13</div>
     <h2 id="frage"></h2>
 
-    <div class="aktionen">
-      <button type="button" id="antwortButton" onclick="zeigeAntwort()">Antwort anzeigen</button>
-      <button type="button" id="zurueckButton" onclick="vorherigeFrage()">Vorherige Frage</button>
-      <button type="button" id="weiterButton" onclick="naechsteFrage()">Nächste Frage</button>
-    </div>
-
     <div id="antwort" class="antwort"></div>
+
+    <div class="aktionen">
+      <button type="button" id="antwortButton">Antwort anzeigen</button>
+      <button type="button" id="zurueckButton">Vorherige Frage</button>
+      <button type="button" id="weiterButton">Nächste Frage</button>
+    </div>
   </div>
 </div>
+
 <script src="script.js"></script>
 </body>
 </html>
