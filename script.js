@@ -371,28 +371,50 @@ const weiterButton = document.getElementById("weiterButton");
 const quizButtons = document.querySelectorAll(".quiz-button");
 
 const fragenListe = document.getElementById("fragenListe");
+const gelernt = quizzes.map((quiz) => Array(quiz.length).fill(false));
 
 function aktualisiereFragenListe() {
   const quiz = quizzes[aktuellesQuiz];
   fragenListe.innerHTML = "";
 
   quiz.forEach((item, index) => {
-    const button = document.createElement("button");
-    button.type = "button";
-    button.className = "frage-link";
-    button.textContent = String(index + 1);
-    button.title = item.frage;
+    const zeile = document.createElement("div");
+    zeile.className = "frage-zeile";
 
-    button.addEventListener("click", () => {
+    const frageButton = document.createElement("button");
+    frageButton.type = "button";
+    frageButton.className = "frage-link";
+    frageButton.textContent = String(index + 1);
+    frageButton.title = item.frage;
+    frageButton.addEventListener("click", () => {
       aktuelleFrage = index;
       anzeigen();
     });
 
     if (index === aktuelleFrage) {
-      button.classList.add("aktiv");
+      frageButton.classList.add("aktiv");
     }
 
-    fragenListe.appendChild(button);
+    const statusButton = document.createElement("button");
+    statusButton.type = "button";
+    statusButton.className = "frage-status";
+    statusButton.textContent = gelernt[aktuellesQuiz][index] ? "✓" : "";
+    statusButton.title = gelernt[aktuellesQuiz][index]
+      ? "Als ungelernt markieren"
+      : "Als gelernt markieren";
+
+    if (gelernt[aktuellesQuiz][index]) {
+      statusButton.classList.add("gelernt");
+    }
+
+    statusButton.addEventListener("click", () => {
+      gelernt[aktuellesQuiz][index] = !gelernt[aktuellesQuiz][index];
+      aktualisiereFragenListe();
+    });
+
+    zeile.appendChild(frageButton);
+    zeile.appendChild(statusButton);
+    fragenListe.appendChild(zeile);
   });
 }
 
@@ -453,5 +475,10 @@ quizButtons.forEach((button) => {
 antwortButton.addEventListener("click", zeigeAntwort);
 zurueckButton.addEventListener("click", vorherigeFrage);
 weiterButton.addEventListener("click", naechsteFrage);
+
+document.getElementById("fragenZuruecksetzen").addEventListener("click", () => {
+  gelernt[aktuellesQuiz].fill(false);
+  aktualisiereFragenListe();
+});
 
 anzeigen();

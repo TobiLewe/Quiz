@@ -161,3 +161,33 @@ button:hover {
     grid-template-columns: 1fr;
   }
 }
+
+.fragen-index #fragenZuruecksetzen {
+  margin-top: 12px;
+  height: 40px;
+  font-size: 13px;
+  background: #222;
+}
+.frage-zeile {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 40px;
+  gap: 6px;
+  width: 100%;
+}
+.frage-status {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 8px;
+  background: #f0f0f0;
+  color: #222;
+  font-weight: bold;
+}
+.frage-status:hover {
+  background: #ddd;
+  opacity: 1;
+}
+.frage-status.gelernt {
+  background: #3a9d5d;
+  color: white;
+}
