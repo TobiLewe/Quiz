@@ -259,3 +259,53 @@ button:hover {
     width: 38px;
   }
 }
+
+/* Haken-Buttons: eigene Gestaltung, unabhängig von der allgemeinen Button-Regel */
+button.frage-status,
+button.frage-status:hover,
+button.frage-status:focus,
+button.frage-status:active {
+  background: #f0f0f0 !important;
+  color: #999 !important;
+  border: 1px solid #d0d0d0 !important;
+  width: 34px !important;
+  height: 40px !important;
+  padding: 0 !important;
+  border-radius: 8px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 17px !important;
+  font-weight: bold !important;
+  line-height: 1 !important;
+  opacity: 1 !important;
+}
+
+button.frage-status.gelernt,
+button.frage-status.gelernt:hover,
+button.frage-status.gelernt:focus,
+button.frage-status.gelernt:active {
+  background: #3a9d5d !important;
+  color: #fff !important;
+  border-color: #3a9d5d !important;
+}
+
+@media (max-width: 800px) {
+  button.frage-status,
+  button.frage-status:hover,
+  button.frage-status:focus,
+  button.frage-status:active {
+    width: 34px !important;
+    height: 42px !important;
+  }
+}
+
+@media (max-width: 380px) {
+  button.frage-status,
+  button.frage-status:hover,
+  button.frage-status:focus,
+  button.frage-status:active {
+    width: 38px !important;
+    height: 42px !important;
+  }
+}
