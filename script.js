@@ -42,7 +42,7 @@ const quizzes = [
     },
     {
       "frage": "Was ist die Constant length?",
-      "antwort": "Antwort 11"
+      "antwort": "Antwort 11.."
     },
     {
       "frage": "Warum benutzt man ein komplexes Basisband?",
