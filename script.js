@@ -45,11 +45,11 @@ const quizzes = [
       "antwort": "Antwort 11"
     },
     {
-      "frage": "Warum komplexes Basisband?",
+      "frage": "Warum benutzt man ein komplexes Basisband?",
       "antwort": "Antwort 12"
     },
     {
-      "frage": "Normalisierungsfaktor?",
+      "frage": "Was ist der Normierungsfaktor?",
       "antwort": "Antwort 13"
     }
   ],
