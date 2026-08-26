@@ -1,0 +1,232 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+  color: #222;
+}
+
+.container {
+  max-width: 1050px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.quiz-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  width: 100%;
+  height: 48px;
+  padding: 0 20px;
+  border: 0;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background: #222;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.quiz-button.aktiv {
+  background: #555;
+}
+
+.quiz-layout {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+
+.fragen-index {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 20px;
+}
+
+.fragen-index h2 {
+  margin: 0 0 15px;
+  font-size: 20px;
+}
+
+#fragenListe {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-height: 560px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.frage-link {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  border-radius: 8px;
+  text-align: left;
+  background: #f0f0f0;
+  color: #222;
+  font-size: 14px;
+}
+
+.frage-link:hover {
+  background: #ddd;
+  opacity: 1;
+}
+
+.frage-link.aktiv {
+  background: #555;
+  color: white;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+}
+
+#fortschritt {
+  color: #666;
+  margin-bottom: 18px;
+}
+
+#frage {
+  min-height: 100px;
+  line-height: 1.5;
+}
+
+.antwort {
+  display: none;
+  margin: 20px 0;
+  padding: 18px;
+  border-radius: 10px;
+  background: #eee;
+  line-height: 1.5;
+}
+
+.aktionen {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  width: 100%;
+}
+
+.aktionen button {
+  margin: 0;
+}
+
+/* Responsive layout */
+@media (max-width: 800px) {
+  .container {
+    margin: 16px auto;
+    padding: 10px;
+  }
+
+  .quiz-layout {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .fragen-index {
+    position: static;
+    padding: 12px;
+  }
+
+  .fragen-index h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  #fragenListe {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 7px;
+    max-height: 230px;
+    overflow-y: auto;
+    padding: 2px;
+  }
+
+  .frage-zeile {
+    display: flex;
+    width: 100%;
+    min-width: 0;
+    gap: 4px;
+  }
+
+  .frage-link {
+    flex: 1 1 auto;
+    min-width: 0;
+    width: auto;
+    height: 38px;
+    padding: 0;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .frage-status {
+    flex: 0 0 30px;
+    width: 30px;
+    height: 38px;
+    padding: 0;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+
+  .fragen-index #fragenZuruecksetzen {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .aktionen {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 430px) {
+  #fragenListe {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 7px;
+    max-height: 240px;
+  }
+
+  .frage-link {
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .frage-status {
+    flex-basis: 30px;
+    width: 30px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 360px) {
+  #fragenListe {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
