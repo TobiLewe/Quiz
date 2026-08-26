@@ -191,3 +191,21 @@ button:hover {
   background: #3a9d5d;
   color: white;
 }
+
+.frage-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  line-height: 1;
+}
+.frage-status:not(.gelernt) {
+  background: #e5e5e5;
+  color: #999;
+  border: 1px solid #ccc;
+}
+.frage-status.gelernt {
+  background: #3a9d5d;
+  color: white;
+  border: 1px solid #3a9d5d;
+}

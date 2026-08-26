@@ -398,7 +398,7 @@ function aktualisiereFragenListe() {
     const statusButton = document.createElement("button");
     statusButton.type = "button";
     statusButton.className = "frage-status";
-    statusButton.textContent = gelernt[aktuellesQuiz][index] ? "✓" : "";
+    statusButton.textContent = "✓";
     statusButton.title = gelernt[aktuellesQuiz][index]
       ? "Als ungelernt markieren"
       : "Als gelernt markieren";
