@@ -55,44 +55,104 @@ const quizzes = [
   ],
   [
     {
-      "frage": "Quiz 2 – Platzhalterfrage 1",
+      "frage": "Was ist Quadraturmodulation?",
       "antwort": "Antwort 1"
     },
     {
-      "frage": "Quiz 2 – Platzhalterfrage 2",
+      "frage": "Zeichne 16-QAM.",
       "antwort": "Antwort 2"
     },
     {
-      "frage": "Quiz 2 – Platzhalterfrage 3",
+      "frage": "Was ist Gray-Code?",
       "antwort": "Antwort 3"
     },
     {
-      "frage": "Quiz 2 – Platzhalterfrage 4",
+      "frage": "Wofür braucht man Gray-Code?",
       "antwort": "Antwort 4"
     },
     {
-      "frage": "Quiz 2 – Platzhalterfrage 5",
+      "frage": "Was macht der Modulator noch?",
       "antwort": "Antwort 5"
     },
     {
-      "frage": "Quiz 2 – Platzhalterfrage 6",
+      "frage": "Warum wird sowohl ein Empfangsfilter als auch ein Sendefilter verwendet?",
       "antwort": "Antwort 6"
     },
     {
-      "frage": "Quiz 2 – Platzhalterfrage 7",
+      "frage": "Warum sind das Sende- und Empfangsfilter beide Root-Raised-Cosine-Filter?",
       "antwort": "Antwort 7"
     },
     {
-      "frage": "Quiz 2 – Platzhalterfrage 8",
+      "frage": "Wie werden Softbits bestimmt?",
       "antwort": "Antwort 8"
     },
     {
-      "frage": "Quiz 2 – Platzhalterfrage 9",
+      "frage": "Wofür braucht man Softbits?",
       "antwort": "Antwort 9"
     },
     {
-      "frage": "Quiz 2 – Platzhalterfrage 10",
+      "frage": "Kann man Softbits mit Blockcodes verwenden?",
       "antwort": "Antwort 10"
+    },
+    {
+      "frage": "Wie funktioniert die Synchronisation bei WLAN (Frequenz- und Timing-Synchronisation)?",
+      "antwort": "Antwort 11"
+    },
+    {
+      "frage": "Was sind die Grenzen der Frequenzsynchronisation?",
+      "antwort": "Antwort 12"
+    },
+    {
+      "frage": "Wie sichern sich Broadcastsysteme wie DVB-T neben dem Viterbi-Decoder noch gegen Fehler ab?",
+      "antwort": "Antwort 13"
+    },
+    {
+      "frage": "Wie sichert sich WLAN noch weiter gegen Fehler ab?",
+      "antwort": "Antwort 14"
+    },
+    {
+      "frage": "Was versteht man unter einem komplexen Basisbandmodell?",
+      "antwort": "Antwort 15"
+    },
+    {
+      "frage": "Warum ist die Impulsantwort des Kanals komplexwertig?",
+      "antwort": "Antwort 16"
+    },
+    {
+      "frage": "Zeichne einen Faltungscodierer.",
+      "antwort": "Antwort 17"
+    },
+    {
+      "frage": "Welche Attribute kann man an einem Faltungscodierer ablesen?",
+      "antwort": "Antwort 18"
+    },
+    {
+      "frage": "Muss man die Coderate erhöhen oder verkleinern, um einen besseren Fehlerschutz zu bekommen?",
+      "antwort": "Antwort 19"
+    },
+    {
+      "frage": "Wie kann ich eine Coderate von 2/3 erzeugen?",
+      "antwort": "Antwort 20"
+    },
+    {
+      "frage": "Wie kann ich eine Coderate von 1/3 erzeugen?",
+      "antwort": "Antwort 21"
+    },
+    {
+      "frage": "Wie kann ich eine Coderate von 2/3 ohne Punktierung erreichen?",
+      "antwort": "Antwort 22"
+    },
+    {
+      "frage": "Was ist Rayleigh-Fading?",
+      "antwort": "Antwort 23"
+    },
+    {
+      "frage": "Was ist Rice-Fading?",
+      "antwort": "Antwort 24"
+    },
+    {
+      "frage": "Was sind die Unterschiede zwischen Rayleigh-Fading und Rice-Fading?",
+      "antwort": "Antwort 25"
     }
   ],
   [
@@ -146,23 +206,23 @@ const frageElement = document.getElementById("frage");
 const fortschrittElement = document.getElementById("fortschritt");
 const antwortElement = document.getElementById("antwort");
 const antwortButton = document.getElementById("antwortButton");
-
-document.getElementById("zurueckButton").addEventListener("click", vorherigeFrage);
-document.getElementById("weiterButton").addEventListener("click", naechsteFrage);
-antwortButton.addEventListener("click", zeigeAntwort);
+const zurueckButton = document.getElementById("zurueckButton");
+const weiterButton = document.getElementById("weiterButton");
+const quizButtons = document.querySelectorAll(".quiz-button");
 
 function anzeigen() {
   const quiz = quizzes[aktuellesQuiz];
   const item = quiz[aktuelleFrage];
 
   frageElement.textContent = item.frage;
-  fortschrittElement.textContent = `Frage ${aktuelleFrage + 1} von ${quiz.length}`;
+  fortschrittElement.textContent =
+    "Frage " + (aktuelleFrage + 1) + " von " + quiz.length;
 
   antwortElement.textContent = "";
   antwortElement.style.display = "none";
   antwortButton.textContent = "Antwort anzeigen";
 
-  document.querySelectorAll(".quiz-btn").forEach((button, index) => {
+  quizButtons.forEach((button, index) => {
     button.classList.toggle("aktiv", index === aktuellesQuiz);
   });
 }
@@ -174,13 +234,11 @@ function wechselQuiz(index) {
 }
 
 function zeigeAntwort() {
-  const item = quizzes[aktuellesQuiz][aktuelleFrage];
-
   if (antwortElement.style.display === "block") {
     antwortElement.style.display = "none";
     antwortButton.textContent = "Antwort anzeigen";
   } else {
-    antwortElement.textContent = item.antwort;
+    antwortElement.textContent = quizzes[aktuellesQuiz][aktuelleFrage].antwort;
     antwortElement.style.display = "block";
     antwortButton.textContent = "Antwort ausblenden";
   }
@@ -197,5 +255,15 @@ function naechsteFrage() {
   aktuelleFrage = (aktuelleFrage + 1) % quiz.length;
   anzeigen();
 }
+
+quizButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    wechselQuiz(Number(button.dataset.quiz));
+  });
+});
+
+antwortButton.addEventListener("click", zeigeAntwort);
+zurueckButton.addEventListener("click", vorherigeFrage);
+weiterButton.addEventListener("click", naechsteFrage);
 
 anzeigen();
