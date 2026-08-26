@@ -157,44 +157,204 @@ const quizzes = [
   ],
   [
     {
-      "frage": "Quiz 3 – Platzhalterfrage 1",
+      "frage": "Was versteht man unter einem Nyquist-Filter und warum ist er wichtig in der Basisbandübertragung?",
       "antwort": "Antwort 1"
     },
     {
-      "frage": "Quiz 3 – Platzhalterfrage 2",
+      "frage": "Warum wird das Raised-Cosine-Filter in zwei Root-Raised-Cosine-Filter aufgeteilt?",
       "antwort": "Antwort 2"
     },
     {
-      "frage": "Quiz 3 – Platzhalterfrage 3",
+      "frage": "Wie funktioniert die Faltung im Frequenzbereich und was bedeutet das für die Modulation?",
       "antwort": "Antwort 3"
     },
     {
-      "frage": "Quiz 3 – Platzhalterfrage 4",
+      "frage": "Erklären Sie das Prinzip der Amplitudenmodulation (AM).",
       "antwort": "Antwort 4"
     },
     {
-      "frage": "Quiz 3 – Platzhalterfrage 5",
+      "frage": "Was passiert mit dem Spektrum, wenn ein Signal mit einer Cosinus-Schwingung multipliziert wird?",
       "antwort": "Antwort 5"
     },
     {
-      "frage": "Quiz 3 – Platzhalterfrage 6",
+      "frage": "Warum ist das Spektrum eines realen Signals konjugiert-symmetrisch?",
       "antwort": "Antwort 6"
     },
     {
-      "frage": "Quiz 3 – Platzhalterfrage 7",
+      "frage": "Was versteht man unter Quadraturmodulation und warum wird sie eingesetzt?",
       "antwort": "Antwort 7"
     },
     {
-      "frage": "Quiz 3 – Platzhalterfrage 8",
+      "frage": "Was bedeutet „kohärente Demodulation“ und wann ist sie notwendig?",
       "antwort": "Antwort 8"
     },
     {
-      "frage": "Quiz 3 – Platzhalterfrage 9",
+      "frage": "Wie funktioniert die synchrone Demodulation im Zeit- und Frequenzbereich?",
       "antwort": "Antwort 9"
     },
     {
-      "frage": "Quiz 3 – Platzhalterfrage 10",
+      "frage": "Welche Rolle spielt der Tiefpassfilter nach der Demodulation?",
       "antwort": "Antwort 10"
+    },
+    {
+      "frage": "Welche Vorteile bietet die IQ-Demodulation?",
+      "antwort": "Antwort 11"
+    },
+    {
+      "frage": "Wie funktioniert die Frequenzmodulation mathematisch?",
+      "antwort": "Antwort 12"
+    },
+    {
+      "frage": "Warum ist FM kein LTI-System?",
+      "antwort": "Antwort 13"
+    },
+    {
+      "frage": "Welche Vorteile bietet die Frequenzmodulation gegenüber AM?",
+      "antwort": "Antwort 14"
+    },
+    {
+      "frage": "Warum kann FM trotz theoretisch unendlichem Spektrum praktisch eingesetzt werden?",
+      "antwort": "Antwort 15"
+    },
+    {
+      "frage": "Was ist das komplexe Basisbandmodell und warum wird es in Simulationen bevorzugt?",
+      "antwort": "Antwort 16"
+    },
+    {
+      "frage": "Wie wird ein digitales Bandpasssystem im Blockschaltbild dargestellt?",
+      "antwort": "Antwort 17"
+    },
+    {
+      "frage": "Welche Vorteile bietet die Simulation im komplexen Basisband gegenüber einer Simulation im realen Bandpassbereich?",
+      "antwort": "Antwort 18"
+    },
+    {
+      "frage": "Wie funktioniert das Symbolmapping bei BPSK, QPSK und QAM?",
+      "antwort": "Antwort 19"
+    },
+    {
+      "frage": "Was ist ein Gray-Code und warum wird er verwendet?",
+      "antwort": "Antwort 20"
+    },
+    {
+      "frage": "Wie unterscheiden sich 16-QAM und 64-QAM in der Symbolzuordnung?",
+      "antwort": "Antwort 21"
+    },
+    {
+      "frage": "Was bedeutet „Decision Boundaries in Symbol Space“ (DUB-S)?",
+      "antwort": "Antwort 22"
+    },
+    {
+      "frage": "Wie arbeitet ein Maximum-Likelihood-Detektor?",
+      "antwort": "Antwort 23"
+    },
+    {
+      "frage": "Wie wird beim Demodulator das empfangene Symbol ausgewählt?",
+      "antwort": "Antwort 24"
+    },
+    {
+      "frage": "Was ist der Unterschied zwischen symbolweiser und bitweiser Detektion?",
+      "antwort": "Antwort 25"
+    },
+    {
+      "frage": "Erklären Sie den Begriff „Softbits“.",
+      "antwort": "Antwort 26"
+    },
+    {
+      "frage": "Wie wird der Log-Likelihood-Ratio (LLR) berechnet und interpretiert?",
+      "antwort": "Antwort 27"
+    },
+    {
+      "frage": "Wie funktioniert ein Faltungskodierer?",
+      "antwort": "Antwort 28"
+    },
+    {
+      "frage": "Was ist ein Trellisdiagramm und wie wird es genutzt?",
+      "antwort": "Antwort 29"
+    },
+    {
+      "frage": "Wie funktioniert der Viterbi-Algorithmus?",
+      "antwort": "Antwort 30"
+    },
+    {
+      "frage": "Was bedeutet „Full-Trace-Back“ und „Partial-Trace-Back“ beim Viterbi-Decoder?",
+      "antwort": "Antwort 31"
+    },
+    {
+      "frage": "Was ist ein Blockcode und wie ist er aufgebaut?",
+      "antwort": "Antwort 32"
+    },
+    {
+      "frage": "Wie bestimmt man die Hamming-Distanz und was bedeutet sie?",
+      "antwort": "Antwort 33"
+    },
+    {
+      "frage": "Was ist der Unterschied zwischen Fehlererkennung und Fehlerkorrektur?",
+      "antwort": "Antwort 34"
+    },
+    {
+      "frage": "Wie funktioniert ein Reed-Solomon-Code?",
+      "antwort": "Antwort 35"
+    },
+    {
+      "frage": "Was ist Punktierung und wie beeinflusst sie die Coderate?",
+      "antwort": "Antwort 36"
+    },
+    {
+      "frage": "Wie funktioniert die Wiederherstellung punktierter Bits im Empfänger?",
+      "antwort": "Antwort 37"
+    },
+    {
+      "frage": "Welche Arten der Synchronisation sind in der Nachrichtentechnik relevant?",
+      "antwort": "Antwort 38"
+    },
+    {
+      "frage": "Wie funktioniert die Burst-Erkennung bei WLAN?",
+      "antwort": "Antwort 39"
+    },
+    {
+      "frage": "Wie hilft die Korrelation bei der Frequenz- und Zeitsynchronisation?",
+      "antwort": "Antwort 40"
+    },
+    {
+      "frage": "Was ist die „Short Training Sequence“ (STS) und wofür wird sie verwendet?",
+      "antwort": "Antwort 41"
+    },
+    {
+      "frage": "Warum wird Interleaving eingesetzt?",
+      "antwort": "Antwort 42"
+    },
+    {
+      "frage": "Wie funktioniert ein Block-Interleaver?",
+      "antwort": "Antwort 43"
+    },
+    {
+      "frage": "Was ist der Zweck des „Energy Dispersal“ Blocks im DVB-T?",
+      "antwort": "Antwort 44"
+    },
+    {
+      "frage": "Wie unterscheidet sich das Interleaving bei DVB von dem bei WLAN?",
+      "antwort": "Antwort 45"
+    },
+    {
+      "frage": "Was ist der Unterschied zwischen CSMA/CD und CSMA/CA?",
+      "antwort": "Antwort 46"
+    },
+    {
+      "frage": "Warum ist bei Funkkanälen keine Kollisionserkennung möglich?",
+      "antwort": "Antwort 47"
+    },
+    {
+      "frage": "Was bedeutet ARQ und wie funktioniert es?",
+      "antwort": "Antwort 48"
+    },
+    {
+      "frage": "Wie verbessert Hybrid-ARQ die Übertragungsqualität?",
+      "antwort": "Antwort 49"
+    },
+    {
+      "frage": "Welche Rolle spielt der „Backoff-Timer“ im Medium Access?",
+      "antwort": "Antwort 50"
     }
   ]
 ];
