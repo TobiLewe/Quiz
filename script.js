@@ -71,7 +71,7 @@ const quizzes = [
       "antwort": "Antwort 4"
     },
     {
-      "frage": "Welche Aufgaben hat der Modulator in der Bandpassübertragung?",
+      "frage": "Welche Aufgaben hat der Modulator bei der Bandpassübertragung?",
       "antwort": "Antwort 5"
     },
     {
@@ -99,7 +99,7 @@ const quizzes = [
       "antwort": "Antwort 11"
     },
     {
-      "frage": "Was sind die Grenzen der Frequenzsynchronisation?",
+      "frage": "Auf was muss man bei der Frequenzsynchronisation achten?",
       "antwort": "Antwort 12"
     },
     {
