@@ -18,7 +18,9 @@ const quizzes = [
     },
     {
       "frage": "Was sind „Soft-bits“?",
-      "antwort": "Antwort 4"
+      "antwort": `Soft-Bits sind keine reinen 0- oder 1-Entscheidungen, sondern enthalten zusätzlich eine Information darüber, wie sicher diese Entscheidung ist.
+        
+        Statt also nur zu sagen ‚Das Bit ist 0‘, gibt ein Soft-Bit beispielsweise an, wie wahrscheinlich 0 oder 1 ist bzw. wie stark das empfangene Signal für eine der beiden Möglichkeiten spricht.`
     },
     {
       "frage": "Was ist die Aufgabe des Kanalcodierers?",
