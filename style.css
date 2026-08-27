@@ -163,6 +163,7 @@ button:hover {
   border-radius: 10px;
   background: #eee;
   line-height: 1.5;
+  white-space: pre-line;
 }
 
 .aktionen {
