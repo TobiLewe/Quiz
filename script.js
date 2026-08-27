@@ -55,15 +55,15 @@ const quizzes = [
   ],
   [
     {
-      "frage": "Was ist Quadraturmodulation?",
+      "frage": "Was versteht man unter Quadraturmodulation und warum wird sie für viele digitale Übertragungsverfahren als Basis verwendet?",
       "antwort": "Antwort 1"
     },
     {
-      "frage": "Zeichne 16-QAM.",
+      "frage": "Zeichnen Sie ein 16-QAM-Konstellationsdiagramm und geben Sie die Bitzuordnung an.",
       "antwort": "Antwort 2"
     },
     {
-      "frage": "Was ist Gray-Code?",
+      "frage": "Was versteht man unter „Gray-Code“? Warum ist es wichtig einen Gray-Code beim Symbolmapping zu verwenden?",
       "antwort": "Antwort 3"
     },
     {
@@ -71,7 +71,7 @@ const quizzes = [
       "antwort": "Antwort 4"
     },
     {
-      "frage": "Was macht der Modulator noch?",
+      "frage": "Welche Aufgaben hat der Modulator in der Bandpassübertragung?",
       "antwort": "Antwort 5"
     },
     {
