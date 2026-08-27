@@ -12,7 +12,9 @@ const quizzes = [
     },
     {
       "frage": "Was versteht man unter „Gray-Code“? Warum ist es wichtig einen Gray-Code beim Symbolmapping zu verwenden?",
-      "antwort": "Antwort 3"
+      "antwort": `Beim Gray-Code werden die Bits den Konstellationspunkten so zugeordnet, dass sich zwei benachbarte Symbole immer nur in einem Bit unterscheiden. Das ist beim Symbolmapping wichtig, weil durch Rauschen oder Verzerrungen ein gesendetes Symbol häufig als benachbartes Symbol entschieden wird.
+        
+        Durch den Gray-Code führt diese Symbolverwechslung dann nur zu einem Bitfehler. Dadurch wird die Bitfehlerrate gegenüber einer ungünstigen Zuordnung reduziert.`
     },
     {
       "frage": "Was sind „Soft-bits“?",
