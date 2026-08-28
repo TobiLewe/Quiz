@@ -43,7 +43,8 @@ const quizzes = [
     },
     {
       "frage": "Begründen Sie den Aufbau der Präambel bei WLAN 802.11a.",
-      "antwort": "Antwort 9"
+      "antwort": `Die Präambel von WLAN 802.11a besteht aus Short Training Symbols (STS) und Long Training Symbols (LTS). Die periodischen STS dienen zur Signalerkennung sowie zur groben Zeit- und Frequenzsynchronisation. 
+      Die anschließend übertragenen LTS dienen insbesondere zur genaueren Synchronisation und zur Kanalschätzung, indem das bekannte Trainingssignal mit dem empfangenen Signal verglichen wird.`
     },
     {
       "frage": "Wie läuft die Synchronisation bei 802.11a ab?",
