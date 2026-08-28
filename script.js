@@ -24,7 +24,9 @@ const quizzes = [
     },
     {
       "frage": "Was ist die Aufgabe des Kanalcodierers?",
-      "antwort": "Antwort 5"
+      "antwort": `Der Kanalcodierer fügt den Nutzdaten gezielt Redundanz hinzu, um Übertragungsfehler beim Empfänger mithilfe von FEC (Forward Error Correction) erkennen und korrigieren zu können.
+      
+      FEC ist ein Verfahren zur Vorwärtsfehlerkorrektur, bei dem durch zusätzliche Redundanz Übertragungsfehler beim Empfänger ohne erneute Übertragung erkannt und korrigiert werden können.`
     },
     {
       "frage": "Welche Arten der Kanalcodierung kennen Sie?",
