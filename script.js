@@ -30,7 +30,7 @@ const quizzes = [
     },
     {
       "frage": "Welche Arten der Kanalcodierung kennen Sie?",
-      "antwort": "Antwort 6"
+      "antwort": "Bei der Kanalcodierung unterscheidet man grundsätzlich zwischen Faltungscodes und Blockcodes. Beispiele für Blockcodes sind BCH-, Reed-Solomon- und LDPC-Codes; Faltungscodes können beispielsweise mit dem Viterbi-Algorithmus dekodiert werden."
     },
     {
       "frage": "Was versteht man unter „Hamming-Distanz“?",
