@@ -38,7 +38,8 @@ const quizzes = [
     },
     {
       "frage": "Nach welchem Prinzip arbeitet ein Viterbi-Decoder?",
-      "antwort": "Antwort 8"
+      "antwort": `Der Viterbi-Decoder dekodiert Faltungscodes, indem er im Trellis für die möglichen Zustandsübergänge Metriken berechnet, diese zu Pfadmetriken aufsummiert und für jeden Zustand jeweils nur den Pfad mit der besten Metrik weiterverfolgt.
+      Am Ende wird der wahrscheinlichste Pfad ausgewählt und daraus die ursprüngliche Bitfolge bestimmt. Bei Soft-Decision-Decodierung wird zusätzlich die Zuverlässigkeit der empfangenen Bits berücksichtigt.`
     },
     {
       "frage": "Begründen Sie den Aufbau der Präambel bei WLAN 802.11a.",
