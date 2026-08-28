@@ -34,7 +34,7 @@ const quizzes = [
     },
     {
       "frage": "Was versteht man unter „Hamming-Distanz“?",
-      "antwort": "Antwort 7"
+      "antwort": "Die Hamming-Distanz gibt die Anzahl der Bitpositionen an, an denen sich zwei gleich lange Codewörter unterscheiden. Die minimale Hamming-Distanz eines Codes bestimmt dabei seine Fähigkeit zur Fehlererkennung und Fehlerkorrektur."
     },
     {
       "frage": "Nach welchem Prinzip arbeitet ein Viterbi-Decoder?",
