@@ -65,87 +65,87 @@ const quizzes = [
   ],
   [
     {
-      "frage": "Welche Aufgaben hat der Modulator bei der Bandpassübertragung?",
+      "frage": "Welche Aufgaben hat der Modulator bei der Bandpassübertragung? (S.)",
       "antwort": "Antwort 5"
     },
     {
-      "frage": "Warum wird sowohl ein Empfangsfilter als auch ein Sendefilter verwendet?",
+      "frage": "Warum wird sowohl ein Empfangsfilter als auch ein Sendefilter verwendet? (S.)",
       "antwort": "Antwort 6"
     },
     {
-      "frage": "Warum sind das Sende- und Empfangsfilter beide Root-Raised-Cosine-Filter?",
+      "frage": "Warum sind das Sende- und Empfangsfilter beide Root-Raised-Cosine-Filter? (S.)",
       "antwort": "Antwort 7"
     },
     {
-      "frage": "Wie werden Softbits bestimmt?",
+      "frage": "Wie werden Softbits bestimmt? (S.)",
       "antwort": "Antwort 8"
     },
     {
-      "frage": "Wofür braucht man Softbits?",
+      "frage": "Wofür braucht man Softbits? (S.)",
       "antwort": "Antwort 9"
     },
     {
-      "frage": "Kann man Softbits mit Blockcodes verwenden?",
+      "frage": "Kann man Softbits mit Blockcodes verwenden? (S.)",
       "antwort": "Antwort 10"
     },
     {
-      "frage": "Wie funktioniert die Synchronisation bei WLAN (Frequenz- und Timing-Synchronisation)?",
+      "frage": "Wie funktioniert die Synchronisation bei WLAN (Frequenz- und Timing-Synchronisation)? (S.)",
       "antwort": "Antwort 11"
     },
     {
-      "frage": "Auf was muss man bei der Frequenzsynchronisation achten?",
+      "frage": "Auf was muss man bei der Frequenzsynchronisation achten? (S.)",
       "antwort": "Antwort 12"
     },
     {
-      "frage": "Wie sichern sich Broadcastsysteme wie DVB-T neben dem Viterbi-Decoder noch gegen Fehler ab?",
+      "frage": "Wie sichern sich Broadcastsysteme wie DVB-T neben dem Viterbi-Decoder noch gegen Fehler ab? (S.)",
       "antwort": "Antwort 13"
     },
     {
-      "frage": "Wie sichert sich WLAN noch weiter gegen Fehler ab?",
+      "frage": "Wie sichert sich WLAN noch weiter gegen Fehler ab? (S.)",
       "antwort": "Antwort 14"
     },
     {
-      "frage": "Was versteht man unter einem komplexen Basisbandmodell?",
+      "frage": "Was versteht man unter einem komplexen Basisbandmodell? (S.)",
       "antwort": "Antwort 15"
     },
     {
-      "frage": "Warum ist die Impulsantwort des Kanals komplexwertig?",
+      "frage": "Warum ist die Impulsantwort des Kanals komplexwertig? (S.)",
       "antwort": "Antwort 16"
     },
     {
-      "frage": "Zeichne einen Faltungscodierer.",
+      "frage": "Zeichne einen Faltungscodierer. (S.)",
       "antwort": "Antwort 17"
     },
     {
-      "frage": "Welche Attribute kann man an einem Faltungscodierer ablesen?",
+      "frage": "Welche Attribute kann man an einem Faltungscodierer ablesen? (S.)",
       "antwort": "Antwort 18"
     },
     {
-      "frage": "Muss man die Coderate erhöhen oder verkleinern, um einen besseren Fehlerschutz zu bekommen?",
+      "frage": "Muss man die Coderate erhöhen oder verkleinern, um einen besseren Fehlerschutz zu bekommen? (S.)",
       "antwort": "Antwort 19"
     },
     {
-      "frage": "Wie kann ich eine Coderate von 2/3 erzeugen?",
+      "frage": "Wie kann ich eine Coderate von 2/3 erzeugen? (S.)",
       "antwort": "Antwort 20"
     },
     {
-      "frage": "Wie kann ich eine Coderate von 1/3 erzeugen?",
+      "frage": "Wie kann ich eine Coderate von 1/3 erzeugen? (S.)",
       "antwort": "Antwort 21"
     },
     {
-      "frage": "Wie kann ich eine Coderate von 2/3 ohne Punktierung erreichen?",
+      "frage": "Wie kann ich eine Coderate von 2/3 ohne Punktierung erreichen? (S.)",
       "antwort": "Antwort 22"
     },
     {
-      "frage": "Was ist Rayleigh-Fading?",
+      "frage": "Was ist Rayleigh-Fading? (S.)",
       "antwort": "Antwort 23"
     },
     {
-      "frage": "Was ist Rice-Fading?",
+      "frage": "Was ist Rice-Fading? (S.)",
       "antwort": "Antwort 24"
     },
     {
-      "frage": "Was sind die Unterschiede zwischen Rayleigh-Fading und Rice-Fading?",
+      "frage": "Was sind die Unterschiede zwischen Rayleigh-Fading und Rice-Fading? (S.)",
       "antwort": "Antwort 25"
     }
   ],
