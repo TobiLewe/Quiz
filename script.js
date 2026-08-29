@@ -1,35 +1,35 @@
 const quizzes = [
   [
     {
-      "frage": "Was versteht man unter Quadraturmodulation und warum wird sie für viele digitale Übertragungsverfahren als Basis verwendet? (S.)",
+      "frage": "Was versteht man unter Quadraturmodulation und warum wird sie für viele digitale Übertragungsverfahren als Basis verwendet? (S.5)",
       "antwort": `Bei der Quadraturmodulation werden zwei Trägersignale verwendet, die um 90° phasenverschoben sind. Diese beiden Signale nennt man I- und Q-Komponente. Dadurch kann man zwei unabhängige Informationsanteile gleichzeitig über denselben Frequenzbereich übertragen.
       
                   Der große Vorteil ist also, dass man Amplitude und Phase des Signals gezielt verändern kann und dadurch viele verschiedene Symbole darstellen kann. Deshalb bildet die Quadraturmodulation die Grundlage für Verfahren wie QPSK und QAM. Sie ermöglicht eine hohe spektrale Effizienz, weil mehrere Bits pro Symbol übertragen werden können.`
     },
     {
-      "frage": "Zeichnen Sie ein 16-QAM-Konstellationsdiagramm und geben Sie die Bitzuordnung an. (S.)",
+      "frage": "Zeichnen Sie ein 16-QAM-Konstellationsdiagramm und geben Sie die Bitzuordnung an. (S.26)",
       "antwort": "Antwort 2"
     },
     {
-      "frage": "Was versteht man unter „Gray-Code“? Warum ist es wichtig einen Gray-Code beim Symbolmapping zu verwenden? (S.)",
+      "frage": "Was versteht man unter „Gray-Code“? Warum ist es wichtig einen Gray-Code beim Symbolmapping zu verwenden? (S.24)",
       "antwort": `Beim Gray-Code werden die Bits den Konstellationspunkten so zugeordnet, dass sich zwei benachbarte Symbole immer nur in einem Bit unterscheiden. Das ist beim Symbolmapping wichtig, weil durch Rauschen oder Verzerrungen ein gesendetes Symbol häufig als benachbartes Symbol entschieden wird.
         
                   Durch den Gray-Code führt diese Symbolverwechslung dann nur zu einem Bitfehler. Dadurch wird die Bitfehlerrate gegenüber einer ungünstigen Zuordnung reduziert.`
     },
     {
-      "frage": "Was sind „Soft-bits“? (S.)",
+      "frage": "Was sind „Soft-bits“? (S.40)",
       "antwort": `Soft-Bits sind keine reinen 0- oder 1-Entscheidungen, sondern enthalten zusätzlich eine Information darüber, wie sicher diese Entscheidung ist.
         
                   Statt also nur zu sagen ‚Das Bit ist 0‘, gibt ein Soft-Bit beispielsweise an, wie wahrscheinlich 0 oder 1 ist bzw. wie stark das empfangene Signal für eine der beiden Möglichkeiten spricht.`
     },
     {
-      "frage": "Was ist die Aufgabe des Kanalcodierers? (S.)",
+      "frage": "Was ist die Aufgabe des Kanalcodierers? (S.20)",
       "antwort": `Der Kanalcodierer fügt den Nutzdaten gezielt Redundanz hinzu, um Übertragungsfehler beim Empfänger mithilfe von FEC (Forward Error Correction) erkennen und korrigieren zu können.
       
       FEC ist ein Verfahren zur Vorwärtsfehlerkorrektur, bei dem durch zusätzliche Redundanz Übertragungsfehler beim Empfänger ohne erneute Übertragung erkannt und korrigiert werden können.`
     },
     {
-      "frage": "Welche Arten der Kanalcodierung kennen Sie? (S.)",
+      "frage": "Welche Arten der Kanalcodierung kennen Sie? (S.36)",
       "antwort": "Bei der Kanalcodierung unterscheidet man grundsätzlich zwischen Faltungscodes und Blockcodes. Beispiele für Blockcodes sind BCH-, Reed-Solomon- und LDPC-Codes; Faltungscodes können beispielsweise mit dem Viterbi-Algorithmus dekodiert werden."
     },
     {
