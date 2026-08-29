@@ -59,8 +59,8 @@ const quizzes = [
       "antwort": "Das komplexe Basisband entkoppelt die Signalverarbeitung weitgehend von der Trägerfrequenz und ermöglicht gleichzeitig eine einfache Darstellung von Amplitude und Phase durch die I- und Q-Komponenten."
     },
     {
-      "frage": "Was ist der Normierungsfaktor?",
-      "antwort": "Antwort 13"
+      "frage": "Was ist der Normierungsfaktor? (S.27)",
+      "antwort": "Der Normierungsfaktor skaliert die Symbole so, dass ihre Leistung bzw. Energie auf einen definierten Referenzwert gebracht wird."
     }
   ],
   [
