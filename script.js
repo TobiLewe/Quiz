@@ -66,7 +66,7 @@ const quizzes = [
   [
     {
       "frage": "Welche Aufgaben hat der Modulator bei der Bandpassübertragung? (S.)",
-      "antwort": "Antwort 5"
+      "antwort": `Der Modulator fasst die Bits zu Symbolen zusammen, führt die Pulsformung bzw. Bandbegrenzung mit einem RRC-Filter durch und setzt das komplexe Basisbandsignal mithilfe einer Trägerfrequenz in den gewünschten Bandpassbereich um.`
     },
     {
       "frage": "Warum wird sowohl ein Empfangsfilter als auch ein Sendefilter verwendet? (S.)",
