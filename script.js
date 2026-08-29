@@ -8,7 +8,7 @@ const quizzes = [
     },
     {
       "frage": "Zeichnen Sie ein 16-QAM-Konstellationsdiagramm und geben Sie die Bitzuordnung an. (S.26)",
-      "antwort": "Antwort 2"
+      antwortBild: "16qam.png"
     },
     {
       "frage": "Was versteht man unter „Gray-Code“? Warum ist es wichtig einen Gray-Code beim Symbolmapping zu verwenden? (S.24)",
