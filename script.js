@@ -1,61 +1,61 @@
 const quizzes = [
   [
     {
-      "frage": "Was versteht man unter Quadraturmodulation und warum wird sie für viele digitale Übertragungsverfahren als Basis verwendet?",
+      "frage": "Was versteht man unter Quadraturmodulation und warum wird sie für viele digitale Übertragungsverfahren als Basis verwendet? (S.)",
       "antwort": `Bei der Quadraturmodulation werden zwei Trägersignale verwendet, die um 90° phasenverschoben sind. Diese beiden Signale nennt man I- und Q-Komponente. Dadurch kann man zwei unabhängige Informationsanteile gleichzeitig über denselben Frequenzbereich übertragen.
       
                   Der große Vorteil ist also, dass man Amplitude und Phase des Signals gezielt verändern kann und dadurch viele verschiedene Symbole darstellen kann. Deshalb bildet die Quadraturmodulation die Grundlage für Verfahren wie QPSK und QAM. Sie ermöglicht eine hohe spektrale Effizienz, weil mehrere Bits pro Symbol übertragen werden können.`
     },
     {
-      "frage": "Zeichnen Sie ein 16-QAM-Konstellationsdiagramm und geben Sie die Bitzuordnung an.",
+      "frage": "Zeichnen Sie ein 16-QAM-Konstellationsdiagramm und geben Sie die Bitzuordnung an. (S.)",
       "antwort": "Antwort 2"
     },
     {
-      "frage": "Was versteht man unter „Gray-Code“? Warum ist es wichtig einen Gray-Code beim Symbolmapping zu verwenden?",
+      "frage": "Was versteht man unter „Gray-Code“? Warum ist es wichtig einen Gray-Code beim Symbolmapping zu verwenden? (S.)",
       "antwort": `Beim Gray-Code werden die Bits den Konstellationspunkten so zugeordnet, dass sich zwei benachbarte Symbole immer nur in einem Bit unterscheiden. Das ist beim Symbolmapping wichtig, weil durch Rauschen oder Verzerrungen ein gesendetes Symbol häufig als benachbartes Symbol entschieden wird.
         
                   Durch den Gray-Code führt diese Symbolverwechslung dann nur zu einem Bitfehler. Dadurch wird die Bitfehlerrate gegenüber einer ungünstigen Zuordnung reduziert.`
     },
     {
-      "frage": "Was sind „Soft-bits“?",
+      "frage": "Was sind „Soft-bits“? (S.)",
       "antwort": `Soft-Bits sind keine reinen 0- oder 1-Entscheidungen, sondern enthalten zusätzlich eine Information darüber, wie sicher diese Entscheidung ist.
         
                   Statt also nur zu sagen ‚Das Bit ist 0‘, gibt ein Soft-Bit beispielsweise an, wie wahrscheinlich 0 oder 1 ist bzw. wie stark das empfangene Signal für eine der beiden Möglichkeiten spricht.`
     },
     {
-      "frage": "Was ist die Aufgabe des Kanalcodierers?",
+      "frage": "Was ist die Aufgabe des Kanalcodierers? (S.)",
       "antwort": `Der Kanalcodierer fügt den Nutzdaten gezielt Redundanz hinzu, um Übertragungsfehler beim Empfänger mithilfe von FEC (Forward Error Correction) erkennen und korrigieren zu können.
       
       FEC ist ein Verfahren zur Vorwärtsfehlerkorrektur, bei dem durch zusätzliche Redundanz Übertragungsfehler beim Empfänger ohne erneute Übertragung erkannt und korrigiert werden können.`
     },
     {
-      "frage": "Welche Arten der Kanalcodierung kennen Sie?",
+      "frage": "Welche Arten der Kanalcodierung kennen Sie? (S.)",
       "antwort": "Bei der Kanalcodierung unterscheidet man grundsätzlich zwischen Faltungscodes und Blockcodes. Beispiele für Blockcodes sind BCH-, Reed-Solomon- und LDPC-Codes; Faltungscodes können beispielsweise mit dem Viterbi-Algorithmus dekodiert werden."
     },
     {
-      "frage": "Was versteht man unter „Hamming-Distanz“?",
+      "frage": "Was versteht man unter „Hamming-Distanz“? (S.)",
       "antwort": "Die Hamming-Distanz gibt die Anzahl der Bitpositionen an, an denen sich zwei gleich lange Codewörter unterscheiden. Die minimale Hamming-Distanz eines Codes bestimmt dabei seine Fähigkeit zur Fehlererkennung und Fehlerkorrektur."
     },
     {
-      "frage": "Nach welchem Prinzip arbeitet ein Viterbi-Decoder?",
+      "frage": "Nach welchem Prinzip arbeitet ein Viterbi-Decoder? (S.)",
       "antwort": `Der Viterbi-Decoder dekodiert Faltungscodes, indem er im Trellis für die möglichen Zustandsübergänge Metriken berechnet, diese zu Pfadmetriken aufsummiert und für jeden Zustand jeweils nur den Pfad mit der besten Metrik weiterverfolgt.
       Am Ende wird der wahrscheinlichste Pfad ausgewählt und daraus die ursprüngliche Bitfolge bestimmt. Bei Soft-Decision-Decodierung wird zusätzlich die Zuverlässigkeit der empfangenen Bits berücksichtigt.`
     },
     {
-      "frage": "Begründen Sie den Aufbau der Präambel bei WLAN 802.11a.",
+      "frage": "Begründen Sie den Aufbau der Präambel bei WLAN 802.11a. (S.)",
       "antwort": `Die Präambel von WLAN 802.11a besteht aus Short Training Symbols (STS) und Long Training Symbols (LTS). Die periodischen STS dienen zur Signalerkennung sowie zur groben Zeit- und Frequenzsynchronisation. 
       Die anschließend übertragenen LTS dienen insbesondere zur genaueren Synchronisation und zur Kanalschätzung, indem das bekannte Trainingssignal mit dem empfangenen Signal verglichen wird.`
     },
     {
-      "frage": "Wie läuft die Synchronisation bei 802.11a ab?",
+      "frage": "Wie läuft die Synchronisation bei 802.11a ab? (S.)",
       "antwort": "Bei 802.11a erfolgt die Synchronisation mithilfe der Präambel. Die periodischen STS dienen zur Signalerkennung sowie zur groben Zeit- und Frequenzsynchronisation. Anschließend werden die LTS zur genaueren Synchronisation und insbesondere zur Kanalschätzung verwendet, indem das bekannte Trainingssignal mit dem empfangenen Signal verglichen wird."
     },
     {
-      "frage": "Was ist die Constraint Length?",
+      "frage": "Was ist die Constraint Length? (S.)",
       "antwort": "Die Constraint Length K eines Faltungscodes gibt an, über wie viele aufeinanderfolgende Eingangsbits sich die Codierung erstreckt. Bei K=3 werden das aktuelle und die zwei vorherigen Bits zur Bildung der Ausgangsbits berücksichtigt."
     },
     {
-      "frage": "Warum benutzt man ein komplexes Basisband?",
+      "frage": "Warum benutzt man ein komplexes Basisband? (S.15)",
       "antwort": "Das komplexe Basisband entkoppelt die Signalverarbeitung weitgehend von der Trägerfrequenz und ermöglicht gleichzeitig eine einfache Darstellung von Amplitude und Phase durch die I- und Q-Komponenten."
     },
     {
