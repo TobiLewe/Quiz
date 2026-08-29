@@ -65,10 +65,6 @@ const quizzes = [
   ],
   [
     {
-      "frage": "Was versteht man unter Quadraturmodulation und warum wird sie für viele digitale Übertragungsverfahren als Basis verwendet?",
-      "antwort": "Antwort 1"
-    },
-    {
       "frage": "Zeichnen Sie ein 16-QAM-Konstellationsdiagramm und geben Sie die Bitzuordnung an.",
       "antwort": "Antwort 2"
     },
