@@ -51,8 +51,8 @@ const quizzes = [
       "antwort": "Bei 802.11a erfolgt die Synchronisation mithilfe der Präambel. Die periodischen STS dienen zur Signalerkennung sowie zur groben Zeit- und Frequenzsynchronisation. Anschließend werden die LTS zur genaueren Synchronisation und insbesondere zur Kanalschätzung verwendet, indem das bekannte Trainingssignal mit dem empfangenen Signal verglichen wird."
     },
     {
-      "frage": "Was ist die Constant length?",
-      "antwort": "Antwort 11"
+      "frage": "Was ist die constraint length?",
+      "antwort": "Die Constraint Length K eines Faltungscodes gibt an, über wie viele aufeinanderfolgende Eingangsbits sich die Codierung erstreckt. Bei K=3 werden das aktuelle und die zwei vorherigen Bits zur Bildung der Ausgangsbits berücksichtigt."
     },
     {
       "frage": "Warum benutzt man ein komplexes Basisband?",
