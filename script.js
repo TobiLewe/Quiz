@@ -56,7 +56,7 @@ const quizzes = [
     },
     {
       "frage": "Warum benutzt man ein komplexes Basisband?",
-      "antwort": "Antwort 12"
+      "antwort": "Das komplexe Basisband entkoppelt die Signalverarbeitung weitgehend von der Trägerfrequenz und ermöglicht gleichzeitig eine einfache Darstellung von Amplitude und Phase durch die I- und Q-Komponenten."
     },
     {
       "frage": "Was ist der Normierungsfaktor?",
