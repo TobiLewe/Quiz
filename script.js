@@ -33,25 +33,25 @@ const quizzes = [
       "antwort": "Bei der Kanalcodierung unterscheidet man grundsätzlich zwischen Faltungscodes und Blockcodes. Beispiele für Blockcodes sind BCH-, Reed-Solomon- und LDPC-Codes; Faltungscodes können beispielsweise mit dem Viterbi-Algorithmus dekodiert werden."
     },
     {
-      "frage": "Was versteht man unter „Hamming-Distanz“? (S.)",
+      "frage": "Was versteht man unter „Hamming-Distanz“? (S.53)",
       "antwort": "Die Hamming-Distanz gibt die Anzahl der Bitpositionen an, an denen sich zwei gleich lange Codewörter unterscheiden. Die minimale Hamming-Distanz eines Codes bestimmt dabei seine Fähigkeit zur Fehlererkennung und Fehlerkorrektur."
     },
     {
-      "frage": "Nach welchem Prinzip arbeitet ein Viterbi-Decoder? (S.)",
+      "frage": "Nach welchem Prinzip arbeitet ein Viterbi-Decoder? (S.39)",
       "antwort": `Der Viterbi-Decoder dekodiert Faltungscodes, indem er im Trellis für die möglichen Zustandsübergänge Metriken berechnet, diese zu Pfadmetriken aufsummiert und für jeden Zustand jeweils nur den Pfad mit der besten Metrik weiterverfolgt.
       Am Ende wird der wahrscheinlichste Pfad ausgewählt und daraus die ursprüngliche Bitfolge bestimmt. Bei Soft-Decision-Decodierung wird zusätzlich die Zuverlässigkeit der empfangenen Bits berücksichtigt.`
     },
     {
-      "frage": "Begründen Sie den Aufbau der Präambel bei WLAN 802.11a. (S.)",
+      "frage": "Begründen Sie den Aufbau der Präambel bei WLAN 802.11a. (S.62)",
       "antwort": `Die Präambel von WLAN 802.11a besteht aus Short Training Symbols (STS) und Long Training Symbols (LTS). Die periodischen STS dienen zur Signalerkennung sowie zur groben Zeit- und Frequenzsynchronisation. 
       Die anschließend übertragenen LTS dienen insbesondere zur genaueren Synchronisation und zur Kanalschätzung, indem das bekannte Trainingssignal mit dem empfangenen Signal verglichen wird.`
     },
     {
-      "frage": "Wie läuft die Synchronisation bei 802.11a ab? (S.)",
+      "frage": "Wie läuft die Synchronisation bei 802.11a ab? (S.62)",
       "antwort": "Bei 802.11a erfolgt die Synchronisation mithilfe der Präambel. Die periodischen STS dienen zur Signalerkennung sowie zur groben Zeit- und Frequenzsynchronisation. Anschließend werden die LTS zur genaueren Synchronisation und insbesondere zur Kanalschätzung verwendet, indem das bekannte Trainingssignal mit dem empfangenen Signal verglichen wird."
     },
     {
-      "frage": "Was ist die Constraint Length? (S.)",
+      "frage": "Was ist die Constraint Length? (S.37)",
       "antwort": "Die Constraint Length K eines Faltungscodes gibt an, über wie viele aufeinanderfolgende Eingangsbits sich die Codierung erstreckt. Bei K=3 werden das aktuelle und die zwei vorherigen Bits zur Bildung der Ausgangsbits berücksichtigt."
     },
     {
