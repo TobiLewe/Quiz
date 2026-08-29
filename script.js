@@ -478,7 +478,24 @@ function zeigeAntwort() {
     antwortElement.style.display = "none";
     antwortButton.textContent = "Antwort anzeigen";
   } else {
-    antwortElement.textContent = quizzes[aktuellesQuiz][aktuelleFrage].antwort;
+    const item = quizzes[aktuellesQuiz][aktuelleFrage];
+
+    antwortElement.innerHTML = "";
+
+    if (item.antwort) {
+      const text = document.createElement("div");
+      text.textContent = item.antwort;
+      antwortElement.appendChild(text);
+    }
+
+    if (item.antwortBild) {
+      const bild = document.createElement("img");
+      bild.src = item.antwortBild;
+      bild.className = "antwort-bild";
+      bild.alt = "Bild zur Antwort";
+      antwortElement.appendChild(bild);
+    }
+
     antwortElement.style.display = "block";
     antwortButton.textContent = "Antwort ausblenden";
   }
