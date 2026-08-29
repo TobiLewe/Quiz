@@ -310,3 +310,11 @@ button.frage-status.gelernt:active {
     height: 42px !important;
   }
 }
+
+.antwort-bild {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 15px auto 0;
+  border-radius: 8px;
+}
