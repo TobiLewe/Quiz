@@ -65,18 +65,6 @@ const quizzes = [
   ],
   [
     {
-      "frage": "Zeichnen Sie ein 16-QAM-Konstellationsdiagramm und geben Sie die Bitzuordnung an.",
-      "antwort": "Antwort 2"
-    },
-    {
-      "frage": "Was versteht man unter „Gray-Code“? Warum ist es wichtig einen Gray-Code beim Symbolmapping zu verwenden?",
-      "antwort": "Antwort 3"
-    },
-    {
-      "frage": "Wofür braucht man Gray-Code?",
-      "antwort": "Antwort 4"
-    },
-    {
       "frage": "Welche Aufgaben hat der Modulator bei der Bandpassübertragung?",
       "antwort": "Antwort 5"
     },
