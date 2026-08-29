@@ -48,7 +48,7 @@ const quizzes = [
     },
     {
       "frage": "Wie läuft die Synchronisation bei 802.11a ab?",
-      "antwort": "Antwort 10"
+      "antwort": "Bei 802.11a erfolgt die Synchronisation mithilfe der Präambel. Die periodischen STS dienen zur Signalerkennung sowie zur groben Zeit- und Frequenzsynchronisation. Anschließend werden die LTS zur genaueren Synchronisation und insbesondere zur Kanalschätzung verwendet, indem das bekannte Trainingssignal mit dem empfangenen Signal verglichen wird."
     },
     {
       "frage": "Was ist die Constant length?",
