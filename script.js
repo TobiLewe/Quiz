@@ -118,8 +118,8 @@ const quizzes = [
       "antwort": "Die Impulsantwort des Kanals ist komplexwertig, weil durch die komplexe Darstellung zwei Komponenten in einer einzigen Beschreibung zusammengefasst werden können, ähnlich wie bei der Quadraturmodulation mit dem I- und Q-Anteil."
     },
     {
-      "frage": "Zeichne einen Faltungscodierer. (S.)",
-      "antwort": "Antwort 17"
+      "frage": "Zeichne einen Faltungscodierer. (S.37)",
+      antwortBild: "Faltungscodierer.png"
     },
     {
       "frage": "Welche Attribute kann man an einem Faltungscodierer ablesen? (S.)",
