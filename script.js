@@ -114,8 +114,8 @@ const quizzes = [
       "antwort": "Ein komplexes Basisbandmodell beschreibt ein Übertragungssystem mithilfe eines komplexen Signals aus In-Phase-Anteil (I) und Quadratur-Anteil (Q), wodurch Amplitude und Phase eines Bandpasssignals im Basisband dargestellt werden können."
     },
     {
-      "frage": "Warum ist die Impulsantwort des Kanals komplexwertig? (S.)",
-      "antwort": "Antwort 16"
+      "frage": "Warum ist die Impulsantwort des Kanals komplexwertig?",
+      "antwort": "Die Impulsantwort des Kanals ist komplexwertig, weil durch die komplexe Darstellung zwei Komponenten in einer einzigen Beschreibung zusammengefasst werden können, ähnlich wie bei der Quadraturmodulation mit dem I- und Q-Anteil."
     },
     {
       "frage": "Zeichne einen Faltungscodierer. (S.)",
