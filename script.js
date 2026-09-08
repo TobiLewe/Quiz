@@ -127,19 +127,19 @@ const quizzes = [
     },
     {
       "frage": "Muss man die Coderate erhöhen oder verkleinern, um einen besseren Fehlerschutz zu bekommen? (S.36)",
-      "antwort": "Um einen besseren Fehlerschutz zu erhalten, muss die Coderate R=k/n verkleinert werden, da dadurch bei gleicher Anzahl an Informationsbits k mehr Codebits n und somit mehr Redundanz übertragen werden."
+      "antwort": "Um einen besseren Fehlerschutz zu erhalten, muss die Coderate R = k/n verkleinert werden, da dadurch bei gleicher Anzahl an Informationsbits k mehr Codebits n und somit mehr Redundanz übertragen werden."
     },
     {
       "frage": "Wie kann ich eine Coderate von 2/3 erzeugen?",
-      "antwort": "Antwort 20"
+      "antwort": "Eine Coderate von R = 2/3 kann durch Punktierung eines Faltungscodierers mit der ursprünglichen Coderate R = 1/2 erzeugt werden: Aus 2 Eingangsbits entstehen zunächst 4 Codebits, von denen anschließend ein Codebit gezielt nicht übertragen wird, sodass 3 Codebits übertragen werden und sich somit R = 2/3 ergibt."
     },
     {
       "frage": "Wie kann ich eine Coderate von 1/3 erzeugen?",
-      "antwort": "Antwort 21"
+      "antwort": "Eine Coderate von R = 1/3 erhält man, indem ein Faltungscodierer verwendet wird, der aus 1 Eingangsbit 3 Codebits erzeugt."
     },
     {
       "frage": "Wie kann ich eine Coderate von 2/3 ohne Punktierung erreichen?",
-      "antwort": "Antwort 22"
+      "antwort": "Ohne Punktierung kann man direkt einen Faltungscodierer mit zwei Eingangsbits und drei Ausgangsbits verwenden. Dadurch werden aus k = 2 Informationsbits jeweils n = 3 Codebits erzeugt, sodass sich direkt die Coderate R = k/n = 2/3 ergibt."
     },
     {
       "frage": "Was ist Rayleigh-Fading?",
