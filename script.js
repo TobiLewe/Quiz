@@ -82,16 +82,16 @@ const quizzes = [
       Dadurch enthalten Softbits neben der Bitentscheidung auch Informationen über die Zuverlässigkeit der Entscheidung.`
     },
     {
-      "frage": "Wofür braucht man Softbits? (S.)",
-      "antwort": "Antwort 9"
+      "frage": "Wofür braucht man Softbits? (S.40)",
+      "antwort": "Softbits werden für die Kanaldecodierung bzw. Fehlerkorrektur benötigt, da sie dem Decoder neben dem Bitwert auch die Zuverlässigkeit der Entscheidung liefern und dadurch eine bessere Fehlerkorrektur ermöglichen."
     },
     {
-      "frage": "Kann man Softbits mit Blockcodes verwenden? (S.)",
-      "antwort": "Antwort 10"
+      "frage": "Kann man Softbits mit Blockcodes verwenden?",
+      "antwort": "Ja, Softbits können auch bei Blockcodes verwendet werden, wenn der verwendete Decoder Soft-Decision-Decoding unterstützt. Dadurch kann der Decoder die Zuverlässigkeit jedes Bits berücksichtigen und die Fehlerkorrektur verbessern."
     },
     {
-      "frage": "Wie funktioniert die Synchronisation bei WLAN (Frequenz- und Timing-Synchronisation)? (S.)",
-      "antwort": "Antwort 11"
+      "frage": "Wie funktioniert die Synchronisation bei WLAN (Frequenz- und Timing-Synchronisation)? (S.56)",
+      "antwort": "Bei WLAN erfolgt die Timing- und Frequenzsynchronisation mithilfe der Präambel, insbesondere der Short Training Sequence (STS). Da sich die STS periodisch wiederholt, kann der Empfänger durch Korrelation mit einer um 16 Abtastwerte verzögerten Sequenz den Beginn des WLAN-Bursts erkennen und damit die Zeitsynchronisation durchführen. Aus der Phase der Korrelation kann gleichzeitig ein Frequenzversatz zwischen Sender und Empfänger bestimmt und für die Frequenzsynchronisation korrigiert werden."
     },
     {
       "frage": "Auf was muss man bei der Frequenzsynchronisation achten? (S.)",
