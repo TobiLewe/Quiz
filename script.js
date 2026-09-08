@@ -160,11 +160,11 @@ const quizzes = [
   [
     {
       "frage": "Was versteht man unter einem Nyquist-Filter und warum ist er wichtig in der Basisbandübertragung?",
-      "antwort": "Antwort 1"
+      "antwort": "Ein Nyquist-Filter ist ein Filter, dessen Impulsantwort so gestaltet ist, dass sich die übertragenen Symbole zum Abtastzeitpunkt nicht gegenseitig beeinflussen. Dadurch wird Intersymbolinterferenz (ISI) vermieden und eine fehlerfreie Symbolentscheidung ermöglicht."
     },
     {
       "frage": "Warum wird das Raised-Cosine-Filter in zwei Root-Raised-Cosine-Filter aufgeteilt?",
-      "antwort": "Antwort 2"
+      "antwort": "Das Raised-Cosine-Filter wird in zwei Root-Raised-Cosine-Filter aufgeteilt, damit ein Filter beim Sender und ein Filter beim Empfänger eingesetzt werden kann und sich beide zusammen zu einem Raised-Cosine-Filter ergänzen. Dadurch wird das Signal bandbegrenzt und gleichzeitig Intersymbolinterferenz (ISI) vermieden."
     },
     {
       "frage": "Wie funktioniert die Faltung im Frequenzbereich und was bedeutet das für die Modulation?",
