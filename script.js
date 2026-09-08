@@ -69,16 +69,17 @@ const quizzes = [
       "antwort": `Der Modulator fasst die Bits zu Symbolen zusammen, führt die Pulsformung bzw. Bandbegrenzung mit einem RRC-Filter durch und setzt das komplexe Basisbandsignal mithilfe einer Trägerfrequenz in den gewünschten Bandpassbereich um.`
     },
     {
-      "frage": "Warum wird sowohl ein Empfangsfilter als auch ein Sendefilter verwendet? (S.3)",
-      "antwort": "Antwort 6"
+      "frage": "Warum wird sowohl ein Empfangsfilter als auch ein Sendefilter in der Basisbandübertragung verwendet? (S.3)",
+      "antwort": "Ein Sendefilter wird verwendet, um das Sendesignal bandzubegrenzen, während ein Empfangsfilter Störungen und unerwünschte Frequenzanteile aus dem empfangenen Signal entfernt."
     },
     {
       "frage": "Warum sind das Sende- und Empfangsfilter beide Root-Raised-Cosine-Filter? (S.3)",
-      "antwort": "Antwort 7"
+      "antwort": "Sende- und Empfangsfilter sind beide Root-Raised-Cosine-Filter, weil sich ihre Übertragungsfunktionen zusammen zu einem Raised-Cosine-Filter ergänzen und dadurch eine bandbegrenzte, ISI-freie Übertragung ermöglicht wird."
     },
     {
-      "frage": "Wie werden Softbits bestimmt? (S.)",
-      "antwort": "Antwort 8"
+      "frage": "Wie werden Softbits bestimmt? (S.34)",
+      "antwort": `Softbits werden mithilfe des Log-Likelihood-Ratio (LLR) berechnet, der angibt, wie viel wahrscheinlicher es ist, dass der empfangene Signalwert einer 1 statt einer 0 beziehungsweise einer 0 statt einer 1 entspricht. 
+      Dadurch enthalten Softbits neben der Bitentscheidung auch Informationen über die Zuverlässigkeit der Entscheidung.`
     },
     {
       "frage": "Wofür braucht man Softbits? (S.)",
