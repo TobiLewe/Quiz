@@ -127,30 +127,30 @@ const quizzes = [
     },
     {
       "frage": "Muss man die Coderate erhöhen oder verkleinern, um einen besseren Fehlerschutz zu bekommen? (S.36)",
-      "antwort": "Um einen besseren Fehlerschutz zu erhalten, muss die Coderate \(R=\frac{k}{n}\) verkleinert werden, da dadurch bei gleicher Anzahl an Informationsbits \(k\) mehr Codebits \(n\) und somit mehr Redundanz übertragen werden."
+      "antwort": "Um einen besseren Fehlerschutz zu erhalten, muss die Coderate R=k/n verkleinert werden, da dadurch bei gleicher Anzahl an Informationsbits k mehr Codebits n und somit mehr Redundanz übertragen werden."
     },
     {
-      "frage": "Wie kann ich eine Coderate von 2/3 erzeugen? (S.)",
+      "frage": "Wie kann ich eine Coderate von 2/3 erzeugen?",
       "antwort": "Antwort 20"
     },
     {
-      "frage": "Wie kann ich eine Coderate von 1/3 erzeugen? (S.)",
+      "frage": "Wie kann ich eine Coderate von 1/3 erzeugen?",
       "antwort": "Antwort 21"
     },
     {
-      "frage": "Wie kann ich eine Coderate von 2/3 ohne Punktierung erreichen? (S.)",
+      "frage": "Wie kann ich eine Coderate von 2/3 ohne Punktierung erreichen?",
       "antwort": "Antwort 22"
     },
     {
-      "frage": "Was ist Rayleigh-Fading? (S.)",
+      "frage": "Was ist Rayleigh-Fading?",
       "antwort": "Antwort 23"
     },
     {
-      "frage": "Was ist Rice-Fading? (S.)",
+      "frage": "Was ist Rice-Fading?",
       "antwort": "Antwort 24"
     },
     {
-      "frage": "Was sind die Unterschiede zwischen Rayleigh-Fading und Rice-Fading? (S.)",
+      "frage": "Was sind die Unterschiede zwischen Rayleigh-Fading und Rice-Fading?",
       "antwort": "Antwort 25"
     }
   ],
