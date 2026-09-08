@@ -122,12 +122,12 @@ const quizzes = [
       antwortBild: "Faltungscodierer.png"
     },
     {
-      "frage": "Welche Attribute kann man an einem Faltungscodierer ablesen? (S.)",
-      "antwort": "Antwort 18"
+      "frage": "Welche Attribute kann man an einem Faltungscodierer ablesen?",
+      "antwort": `An einem Faltungscodierer kann man die Coderate, die Constraint Length beziehungsweise Gedächtnislänge und die verwendeten Generatorpolynome ablesen.`
     },
     {
-      "frage": "Muss man die Coderate erhöhen oder verkleinern, um einen besseren Fehlerschutz zu bekommen? (S.)",
-      "antwort": "Antwort 19"
+      "frage": "Muss man die Coderate erhöhen oder verkleinern, um einen besseren Fehlerschutz zu bekommen? (S.36)",
+      "antwort": "Um einen besseren Fehlerschutz zu erhalten, muss die Coderate \(R=\frac{k}{n}\) verkleinert werden, da dadurch bei gleicher Anzahl an Informationsbits \(k\) mehr Codebits \(n\) und somit mehr Redundanz übertragen werden."
     },
     {
       "frage": "Wie kann ich eine Coderate von 2/3 erzeugen? (S.)",
