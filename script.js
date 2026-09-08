@@ -215,17 +215,17 @@ const quizzes = [
     {
       "thema": "Spektrumsverschiebung",
       "frage": "Was passiert mit dem Spektrum, wenn ein Signal mit einer Cosinus-Schwingung multipliziert wird?",
-      "antwort": "Antwort 5"
+      "antwort": "Wird ein Signal mit einer Cosinus-Schwingung multipliziert, wird sein Spektrum jeweils um die positive und negative Trägerfrequenz verschoben, wodurch zwei spektrale Kopien des ursprünglichen Signals entstehen."
     },
     {
       "thema": "Konjugiert-symmetrisches Spektrum",
-      "frage": "Warum ist das Spektrum eines realen Signals konjugiert-symmetrisch?",
+      "frage": "Das Spektrum eines reellen Signals ist konjugiert-symmetrisch, damit sich die imaginären Anteile der positiven und negativen Frequenzkomponenten gegenseitig aufheben und nach der Rücktransformation wieder ein reelles Signal entsteht.",
       "antwort": "Antwort 6"
     },
     {
       "thema": "Quadraturmodulation",
       "frage": "Was versteht man unter Quadraturmodulation und warum wird sie eingesetzt?",
-      "antwort": "Antwort 7"
+      "antwort": "Unter Quadraturmodulation versteht man ein Modulationsverfahren, bei dem zwei voneinander unabhängige Signalanteile, der In-Phase-Anteil (I) und der um 90° phasenverschobene Quadratur-Anteil (Q), gleichzeitig auf zwei orthogonale Trägersignale moduliert und anschließend zu einem gemeinsamen Signal zusammengefasst werden. Sie wird eingesetzt, um mehr Informationen gleichzeitig über dieselbe Trägerfrequenz zu übertragen und digitale Modulationsverfahren wie QPSK oder QAM zu ermöglichen."
     },
     {
       "thema": "Kohärente Demodulation",
