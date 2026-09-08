@@ -168,11 +168,11 @@ const quizzes = [
     },
     {
       "frage": "Wie funktioniert die Faltung im Frequenzbereich und was bedeutet das für die Modulation?",
-      "antwort": "Antwort 3"
+      "antwort": `Bei der Faltung im Zeitbereich werden zwei Signale miteinander verknüpft, wobei die Faltung im Frequenzbereich einer Multiplikation der jeweiligen Frequenzspektren entspricht. Für die Modulation bedeutet dies, dass durch die Multiplikation des Basisbandsignals mit einem Trägersignal dessen Spektrum in den Bereich der Trägerfrequenz verschoben wird, wodurch aus dem ursprünglichen Basisbandsignal ein Bandpasssignal entsteht.`
     },
     {
       "frage": "Erklären Sie das Prinzip der Amplitudenmodulation (AM).",
-      "antwort": "Antwort 4"
+      "antwort": "Bei der Amplitudenmodulation (AM) wird die Amplitude eines hochfrequenten Trägersignals entsprechend dem Verlauf des Nachrichtensignals verändert, während die Trägerfrequenz und die Phase im Idealfall konstant bleiben. Dadurch wird das Nachrichtensignal auf den Träger aufmoduliert und kann als Bandpasssignal übertragen werden."
     },
     {
       "frage": "Was passiert mit dem Spektrum, wenn ein Signal mit einer Cosinus-Schwingung multipliziert wird?",
