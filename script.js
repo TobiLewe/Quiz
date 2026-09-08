@@ -230,17 +230,17 @@ const quizzes = [
     {
       "thema": "Kohärente Demodulation",
       "frage": "Was bedeutet „kohärente Demodulation“ und wann ist sie notwendig?",
-      "antwort": "Antwort 8"
+      "antwort": "Kohärente Demodulation bedeutet, dass der Empfänger eine Referenzphase des Trägers benötigt und sein lokales Trägersignal in Frequenz und Phase möglichst genau mit dem Trägersignal des Senders synchronisiert. Sie ist notwendig, wenn die Information in der Phase und/oder Amplitude des Signals enthalten ist, beispielsweise bei PSK oder QAM."
     },
     {
       "thema": "Synchrone Demodulation",
       "frage": "Wie funktioniert die synchrone Demodulation im Zeit- und Frequenzbereich?",
-      "antwort": "Antwort 9"
+      "antwort": "Bei der synchronen Demodulation wird das modulierte Empfangssignal im Zeitbereich mit einem lokalen Trägersignal gleicher Frequenz und Referenzphase multipliziert, wodurch ein Anteil des ursprünglichen Nachrichtensignals sowie ein hochfrequenter Anteil entstehen, der anschließend durch einen Tiefpassfilter entfernt wird."
     },
     {
       "thema": "Tiefpassfilter",
       "frage": "Welche Rolle spielt der Tiefpassfilter nach der Demodulation?",
-      "antwort": "Antwort 10"
+      "antwort": "Bei der synchronen Demodulation wird im Zeitbereich das Empfangssignal mit einem lokalen Träger multipliziert. Im Frequenzbereich führt dies dazu, dass sich die im Empfangssignal enthaltenen Frequenzanteile verschieben und sowohl ein gewünschter niederfrequenter als auch ein unerwünschter hochfrequenter Anteil entsteht, wobei der gewünschte Anteil durch einen Tiefpass herausgefiltert wird."
     },
     {
       "thema": "IQ-Demodulation",
