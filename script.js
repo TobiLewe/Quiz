@@ -143,15 +143,18 @@ const quizzes = [
     },
     {
       "frage": "Was ist Rayleigh-Fading?",
-      "antwort": "Antwort 23"
+      "antwort": "Rayleigh-Fading beschreibt eine Mehrwegeausbreitung ohne dominanten direkten Sichtweg, bei der sich viele reflektierte Signalanteile überlagern und dadurch die Empfangsamplitude stark schwankt."
     },
     {
       "frage": "Was ist Rice-Fading?",
-      "antwort": "Antwort 24"
+      "antwort": "Rice-Fading beschreibt eine Mehrwegeausbreitung, bei der neben den reflektierten Signalanteilen ein dominanter direkter Sichtweg zwischen Sender und Empfänger vorhanden ist."
     },
     {
       "frage": "Was sind die Unterschiede zwischen Rayleigh-Fading und Rice-Fading?",
-      "antwort": "Antwort 25"
+      "antwort": `Beispiel:
+  	Du befindest dich mit deinem Handy in einem Gebäude und hast keine direkte Sicht zur Mobilfunkantenne. Das Signal erreicht dich hauptsächlich über Reflexionen → Rayleigh-Fading.
+
+    Stehst du dagegen im Freien mit direkter Sicht auf die Mobilfunkantenne, gibt es einen starken direkten Signalweg zusätzlich zu Reflexionen → Rice-Fading.
     }
   ],
   [
