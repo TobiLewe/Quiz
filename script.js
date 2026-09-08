@@ -154,7 +154,7 @@ const quizzes = [
       "antwort": `Beispiel:
   	Du befindest dich mit deinem Handy in einem Gebäude und hast keine direkte Sicht zur Mobilfunkantenne. Das Signal erreicht dich hauptsächlich über Reflexionen → Rayleigh-Fading.
 
-    Stehst du dagegen im Freien mit direkter Sicht auf die Mobilfunkantenne, gibt es einen starken direkten Signalweg zusätzlich zu Reflexionen → Rice-Fading.
+    Stehst du dagegen im Freien mit direkter Sicht auf die Mobilfunkantenne, gibt es einen starken direkten Signalweg zusätzlich zu Reflexionen → Rice-Fading.`
     }
   ],
   [
