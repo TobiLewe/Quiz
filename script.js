@@ -91,23 +91,27 @@ const quizzes = [
     },
     {
       "frage": "Wie funktioniert die Synchronisation bei WLAN (Frequenz- und Timing-Synchronisation)? (S.56)",
-      "antwort": "Bei WLAN erfolgt die Timing- und Frequenzsynchronisation mithilfe der Präambel, insbesondere der Short Training Sequence (STS). Da sich die STS periodisch wiederholt, kann der Empfänger durch Korrelation mit einer um 16 Abtastwerte verzögerten Sequenz den Beginn des WLAN-Bursts erkennen und damit die Zeitsynchronisation durchführen. Aus der Phase der Korrelation kann gleichzeitig ein Frequenzversatz zwischen Sender und Empfänger bestimmt und für die Frequenzsynchronisation korrigiert werden."
+      "antwort": `Bei WLAN erfolgt die Timing- und Frequenzsynchronisation mithilfe der Präambel, insbesondere der Short Training Sequence (STS). Da sich die STS periodisch wiederholt, kann der Empfänger durch Korrelation mit einer um 16 Abtastwerte verzögerten Sequenz den Beginn des WLAN-Bursts erkennen und damit die Zeitsynchronisation durchführen.
+      
+      Aus der Phase der Korrelation kann gleichzeitig ein Frequenzversatz zwischen Sender und Empfänger bestimmt und für die Frequenzsynchronisation korrigiert werden.`
     },
     {
-      "frage": "Auf was muss man bei der Frequenzsynchronisation achten? (S.)",
-      "antwort": "Antwort 12"
+      "frage": "Auf was muss man bei der Frequenzsynchronisation achten? (S.59)",
+      "antwort": `Bei der Frequenzsynchronisation muss darauf geachtet werden, dass ein Frequenzversatz zwischen Sender und Empfänger zu einem ständig zunehmenden Phasenfehler führt.
+
+      Bei der Frequenzsynchronisation darf die Phasendifferenz maximal ±180° (±π) betragen, da bei einer größeren Phasendifferenz Mehrdeutigkeiten durch Phasen-Wrapping entstehen.`
     },
     {
-      "frage": "Wie sichern sich Broadcastsysteme wie DVB-T neben dem Viterbi-Decoder noch gegen Fehler ab? (S.)",
-      "antwort": "Antwort 13"
+      "frage": "Wie sichern sich Broadcastsysteme wie DVB-T neben dem Viterbi-Decoder noch gegen Fehler ab? (S.61)",
+      "antwort": `Broadcastsysteme wie DVB-T sichern sich zusätzlich zum Viterbi-Decoder durch eine äußere Reed-Solomon-Fehlerkorrektur gegen Fehler ab, wobei zuvor ein De-Interleaving stattfindet, um die durch das Interleaving verteilten Fehler wieder in ihre ursprüngliche Reihenfolge zu bringen.`
     },
     {
-      "frage": "Wie sichert sich WLAN noch weiter gegen Fehler ab? (S.)",
-      "antwort": "Antwort 14"
+      "frage": "Wie sichert sich WLAN noch weiter gegen Fehler ab? (S.62)",
+      "antwort": `WLAN sichert sich zusätzlich durch ein ARQ-Verfahren (Automatic Repeat Request) gegen Fehler ab, bei dem fehlerhafte Datenpakete erkannt und anschließend erneut übertragen werden.`
     },
     {
-      "frage": "Was versteht man unter einem komplexen Basisbandmodell? (S.)",
-      "antwort": "Antwort 15"
+      "frage": "Was versteht man unter einem komplexen Basisbandmodell? (S.15)",
+      "antwort": "Ein komplexes Basisbandmodell beschreibt ein Übertragungssystem mithilfe eines komplexen Signals aus In-Phase-Anteil (I) und Quadratur-Anteil (Q), wodurch Amplitude und Phase eines Bandpasssignals im Basisband dargestellt werden können."
     },
     {
       "frage": "Warum ist die Impulsantwort des Kanals komplexwertig? (S.)",
