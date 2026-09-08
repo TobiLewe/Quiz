@@ -220,7 +220,7 @@ const quizzes = [
     {
       "thema": "Konjugiert-symmetrisches Spektrum",
       "frage": "Das Spektrum eines reellen Signals ist konjugiert-symmetrisch, damit sich die imaginären Anteile der positiven und negativen Frequenzkomponenten gegenseitig aufheben und nach der Rücktransformation wieder ein reelles Signal entsteht.",
-      "antwort": "Antwort 6"
+      "antwort": "Das Spektrum eines reellen Signals ist konjugiert-symmetrisch, damit sich die imaginären Anteile der positiven und negativen Frequenzkomponenten gegenseitig aufheben und nach der Rücktransformation wieder ein reelles Signal entsteht."
     },
     {
       "thema": "Quadraturmodulation",
