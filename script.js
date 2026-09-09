@@ -269,10 +269,10 @@ const quizzes = [
     },
     {
       "thema": "Komplexes Basisband",
-      "frage": `Das komplexe Basisbandmodell beschreibt ein Bandpasssignal durch ein komplexes Signal mit einem Realteil (I) und einem Imaginärteil (Q). Dadurch können die Informationen über Amplitude und Phase des ursprünglichen Bandpasssignals dargestellt werden, ohne den hochfrequenten Träger selbst simulieren zu müssen.
+      "frage": "Was ist das komplexe Basisbandmodell und warum wird es in Simulationen bevorzugt?",
+      "antwort": `Das komplexe Basisbandmodell beschreibt ein Bandpasssignal durch ein komplexes Signal mit einem Realteil (I) und einem Imaginärteil (Q). Dadurch können die Informationen über Amplitude und Phase des ursprünglichen Bandpasssignals dargestellt werden, ohne den hochfrequenten Träger selbst simulieren zu müssen.
       
-      Es wird in Simulationen bevorzugt, weil nur das komplexe Basisbandsignal verarbeitet werden muss und dadurch geringere Abtastraten und weniger Rechenaufwand erforderlich sind.`,
-      "antwort": "Antwort 16"
+      Es wird in Simulationen bevorzugt, weil nur das komplexe Basisbandsignal verarbeitet werden muss und dadurch geringere Abtastraten und weniger Rechenaufwand erforderlich sind.`
     },
     {
       "thema": "Digitales Bandpasssystem",
