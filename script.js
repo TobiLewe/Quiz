@@ -277,7 +277,7 @@ const quizzes = [
     {
       "thema": "Digitales Bandpasssystem",
       "frage": "Wie wird ein digitales Bandpasssystem im Blockschaltbild dargestellt?",
-      "antwort": "Antwort 17"
+      antwortBild: "Blockschaltbild.png"
     },
     {
       "thema": "Basisband-Simulation",
