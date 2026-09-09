@@ -331,17 +331,28 @@ Da bei 64-QAM mehr Konstellationspunkte im gleichen Signalraum untergebracht wer
     {
       "thema": "Softbits",
       "frage": "Erklären Sie den Begriff „Softbits“.",
-      "antwort": "Antwort 26"
+      "antwort": "Softbits sind keine festen 0- oder 1-Entscheidungen, sondern enthalten zusätzlich eine Information darüber, wie sicher die Entscheidung ist. Sie werden beispielsweise über den Log-Likelihood-Ratio (LLR) dargestellt: Der Betrag gibt die Zuverlässigkeit an, das Vorzeichen die wahrscheinliche Bitentscheidung. Dadurch kann der Kanaldecoder die Zuverlässigkeit einzelner Bits berücksichtigen und die Fehlerkorrektur verbessern."
     },
     {
       "thema": "LLR",
       "frage": "Wie wird der Log-Likelihood-Ratio (LLR) berechnet und interpretiert?",
-      "antwort": "Antwort 27"
+      "antwort": `Der LLR (Log-Likelihood-Ratio) wird als Verhältnis der Wahrscheinlichkeiten berechnet, dass das empfangene Signal zu einer 1 bzw. zu einer 0 gehört:
+
+Dabei gilt:
+
+LLR = ln(p0(r) / p1(r))
+
+LLR > 0: Eine 1 ist wahrscheinlicher.
+LLR < 0: Eine 0 ist wahrscheinlicher.
+|LLR| groß: Die Entscheidung ist sehr zuverlässig.
+|LLR| klein: Die Entscheidung ist unsicher.
+
+Damit liefert der LLR nicht nur die Bitentscheidung, sondern auch deren Zuverlässigkeit.`
     },
     {
       "thema": "Faltungskodierer",
       "frage": "Wie funktioniert ein Faltungskodierer?",
-      "antwort": "Antwort 28"
+      "antwort": "Ein Faltungscodierer fügt einem Datenstrom gezielt Redundanz hinzu, um Übertragungsfehler später korrigieren zu können. Dabei werden die aktuellen Eingangsbits zusammen mit zuvor gespeicherten Bits aus einem Schieberegister über XOR-Verknüpfungen verarbeitet. Aus diesen Bits entstehen mehrere Ausgangsbits, deren Anzahl durch die Coderate bestimmt wird."
     },
     {
       "thema": "Trellisdiagramm",
