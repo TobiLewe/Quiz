@@ -275,8 +275,8 @@ const quizzes = [
       Es wird in Simulationen bevorzugt, weil nur das komplexe Basisbandsignal verarbeitet werden muss und dadurch geringere Abtastraten und weniger Rechenaufwand erforderlich sind.`
     },
     {
-      "thema": "Digitales Bandpasssystem",
-      "frage": "Wie wird ein digitales Bandpasssystem im Blockschaltbild dargestellt?",
+      "thema": "Digitales Übertragungssystem",
+      "frage": "Wie wird ein digitales Übertragungssystem im Blockschaltbild dargestellt?",
       antwortBild: "Blockschaltbild.png"
     },
     {
