@@ -282,17 +282,21 @@ const quizzes = [
     {
       "thema": "Basisband-Simulation",
       "frage": "Welche Vorteile bietet die Simulation im komplexen Basisband gegenüber einer Simulation im realen Bandpassbereich?",
-      "antwort": "Antwort 18"
+      "antwort": "Die Simulation im komplexen Basisband bietet gegenüber einer Simulation im realen Bandpassbereich den Vorteil, dass der hochfrequente Träger nicht mit simuliert werden muss. Dadurch sind geringere Abtastraten, weniger Datenpunkte und somit ein deutlich geringerer Rechenaufwand erforderlich, während die für die Übertragung wichtigen Informationen über Amplitude und Phase weiterhin durch die I- und Q-Komponenten erhalten bleiben."
     },
     {
       "thema": "Symbolmapping",
       "frage": "Wie funktioniert das Symbolmapping bei BPSK, QPSK und QAM?",
-      "antwort": "Antwort 19"
+      "antwort": `Beim Symbolmapping werden mehrere Bits jeweils einem bestimmten Symbol bzw. Punkt in einem Signalraumdiagramm (Konstellationsdiagramm) zugeordnet.
+
+BPSK: Ein Bit wird auf eines von zwei Symbolen abgebildet, beispielsweise 0 → +1 und 1 → −1. Die beiden Symbole unterscheiden sich durch ihre Phase um 180°.
+QPSK: Je zwei Bits werden einem von vier Symbolen zugeordnet. Die vier Symbole besitzen unterschiedliche Phasen, beispielsweise 45°, 135°, 225° und 315°.
+QAM: Mehrere Bits werden einem Punkt im I-Q-Diagramm zugeordnet. Dabei unterscheiden sich die Symbole sowohl in ihrer Amplitude als auch in ihrer Phase.`
     },
     {
       "thema": "Gray-Code",
       "frage": "Was ist ein Gray-Code und warum wird er verwendet?",
-      "antwort": "Antwort 20"
+      "antwort": "Ein Gray-Code ist eine Bitzuordnung, bei der sich zwei benachbarte Symbole nur in einem einzigen Bit unterscheiden. Er wird beim Symbolmapping verwendet, damit bei einer fehlerhaften Entscheidung für ein benachbartes Symbol möglichst nur ein Bitfehler statt mehrerer Bitfehler entsteht."
     },
     {
       "thema": "16-QAM vs. 64-QAM",
