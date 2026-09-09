@@ -301,27 +301,32 @@ QAM: Mehrere Bits werden einem Punkt im I-Q-Diagramm zugeordnet. Dabei untersche
     {
       "thema": "16-QAM vs. 64-QAM",
       "frage": "Wie unterscheiden sich 16-QAM und 64-QAM in der Symbolzuordnung?",
-      "antwort": "Antwort 21"
+      "antwort": `Bei der Symbolzuordnung unterscheiden sich 16-QAM und 64-QAM hauptsächlich in der Anzahl der verwendeten Symbole:
+
+Bei 16-QAM werden 4 Bit pro Symbol auf einen von 16 Konstellationspunkten abgebildet.
+Bei 64-QAM werden 6 Bit pro Symbol auf einen von 64 Konstellationspunkten abgebildet.
+
+Da bei 64-QAM mehr Konstellationspunkte im gleichen Signalraum untergebracht werden, liegen diese näher beieinander. Dadurch kann 64-QAM mehr Daten übertragen, ist aber empfindlicher gegenüber Störungen und Rauschen.`
     },
     {
       "thema": "Decision Boundaries",
       "frage": "Was bedeutet „Decision Boundaries in Symbol Space“ (DUB-S)?",
-      "antwort": "Antwort 22"
+      "antwort": "„Decision Boundaries in Symbol Space“ (Entscheidungsgrenzen im Symbolraum) sind die Grenzen zwischen den einzelnen Symbolbereichen eines Konstellationsdiagramms. Sie legen fest, welchem Symbol ein empfangener Punkt zugeordnet wird: Der Empfänger entscheidet sich normalerweise für das Symbol bzw. den Konstellationspunkt, zu dem der empfangene Punkt den geringsten Abstand hat."
     },
     {
       "thema": "Maximum Likelihood",
       "frage": "Wie arbeitet ein Maximum-Likelihood-Detektor?",
-      "antwort": "Antwort 23"
+      "antwort": "Der Maximum-Likelihood-Detektor wählt das mögliche Sendesymbol mit dem kleinsten Abstand zum empfangenen Symbol. Mathematisch gilt: ŝ = s mit ||s_empf − s||² minimal. Dadurch ist die Entscheidung sehr genau, allerdings müssen die Abstände zu allen möglichen Sendesymbolen berechnet und verglichen werden, was einen hohen Rechenaufwand verursacht."
     },
     {
       "thema": "Symbolentscheidung",
       "frage": "Wie wird beim Demodulator das empfangene Symbol ausgewählt?",
-      "antwort": "Antwort 24"
+      "antwort": "Beim Demodulator wird das empfangene Symbol mit den möglichen Konstellationspunkten verglichen und demjenigen Symbol zugeordnet, zu dem der Abstand am kleinsten ist."
     },
     {
       "thema": "Symbol- vs. Bitdetektion",
       "frage": "Was ist der Unterschied zwischen symbolweiser und bitweiser Detektion?",
-      "antwort": "Antwort 25"
+      "antwort": "Bei der symbolweisen Detektion wird zunächst das gesamte empfangene Symbol ausgewertet und einem Konstellationspunkt zugeordnet; daraus ergibt sich anschließend die zugehörige Bitfolge. Bei der bitweisen Detektion wird dagegen jedes Bit der empfangenen Bitfolge einzeln anhand seiner Wahrscheinlichkeit für 0 oder 1 bewertet. Dadurch können beispielsweise Softbits bzw. LLR-Werte für die anschließende Kanaldecodierung verwendet werden."
     },
     {
       "thema": "Softbits",
