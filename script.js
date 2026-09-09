@@ -369,8 +369,7 @@ Der Viterbi-Decoder nutzt das Trellisdiagramm, um aus den möglichen Pfaden den 
     {
       "thema": "Trace-Back",
       "frage": "Was bedeutet „Full-Trace-Back“ und „Partial-Trace-Back“ beim Viterbi-Decoder?",
-      "antwort": "Beim Full-Trace-Back wird der beste Pfad durch das gesamte Trellis bis zum Anfang zurückverfolgt. Beim Partial-Trace-Back wird dagegen nur ein begrenzter Abschnitt des Trellis zurückverfolgt. Da sich dabei nach einer gewissen Traceback-Länge mehrere mögliche Pfade zu einem gemeinsamen Pfad vereinigen, ist dieser gemeinsame Abschnitt bereits eindeutig und kann als **korrekt decodiert** ausgegeben werden, ohne das gesamte Trellis durchlaufen zu müssen.
-"
+      "antwort": "Beim Full-Trace-Back wird der beste Pfad durch das gesamte Trellis bis zum Anfang zurückverfolgt. Beim Partial-Trace-Back wird dagegen nur ein begrenzter Abschnitt des Trellis zurückverfolgt. Da sich dabei nach einer gewissen Traceback-Länge mehrere mögliche Pfade zu einem gemeinsamen Pfad vereinigen, ist dieser gemeinsame Abschnitt bereits eindeutig und kann als korrekt decodiert ausgegeben werden, ohne das gesamte Trellis durchlaufen zu müssen."
     },
     {
       "thema": "Blockcode",
