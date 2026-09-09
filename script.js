@@ -357,32 +357,39 @@ Damit liefert der LLR nicht nur die Bitentscheidung, sondern auch deren Zuverlä
     {
       "thema": "Trellisdiagramm",
       "frage": "Was ist ein Trellisdiagramm und wie wird es genutzt?",
-      "antwort": "Antwort 29"
+      "antwort": `Ein Trellisdiagramm stellt die möglichen Zustände eines Faltungscodierers über die Zeit dar. Es zeigt, von welchem aktuellen Zustand bei einem bestimmten Eingangsbit in welchen neuen Zustand gewechselt wird und welche Ausgangsbits dabei entstehen.
+
+Der Viterbi-Decoder nutzt das Trellisdiagramm, um aus den möglichen Pfaden den wahrscheinlichsten Pfad zu bestimmen und damit die ursprünglich gesendeten Bits zu rekonstruieren.`
     },
     {
       "thema": "Viterbi-Algorithmus",
       "frage": "Wie funktioniert der Viterbi-Algorithmus?",
-      "antwort": "Antwort 30"
+      "antwort": "Der Viterbi-Algorithmus nutzt das Trellisdiagramm, um aus allen möglichen Zustandsübergängen den wahrscheinlichsten Pfad zu bestimmen. Dazu werden für jeden möglichen Pfad die Pfadmetriken berechnet und bei jedem Zustand nur der Pfad mit der besten Metrik behalten. Am Ende wird der beste Pfad zurückverfolgt (Traceback), wodurch die wahrscheinlichste Folge der ursprünglich gesendeten Bits rekonstruiert wird."
     },
     {
       "thema": "Trace-Back",
       "frage": "Was bedeutet „Full-Trace-Back“ und „Partial-Trace-Back“ beim Viterbi-Decoder?",
-      "antwort": "Antwort 31"
+      "antwort": "Beim Full-Trace-Back wird der beste Pfad durch das gesamte Trellis bis zum Anfang zurückverfolgt. Beim Partial-Trace-Back wird dagegen nur ein begrenzter Abschnitt des Trellis zurückverfolgt. Da sich dabei nach einer gewissen Traceback-Länge mehrere mögliche Pfade zu einem gemeinsamen Pfad vereinigen, ist dieser gemeinsame Abschnitt bereits eindeutig und kann als **korrekt decodiert** ausgegeben werden, ohne das gesamte Trellis durchlaufen zu müssen.
+"
     },
     {
       "thema": "Blockcode",
       "frage": "Was ist ein Blockcode und wie ist er aufgebaut?",
-      "antwort": "Antwort 32"
+      "antwort": "Ein Blockcode unterteilt die zu übertragenden Daten in Blöcke mit einer festen Anzahl von Informationsbits und fügt jedem Block zusätzliche Redundanzbits hinzu. Dadurch entsteht ein Codewort mit fester Länge, das der Empfänger zur Fehlererkennung und gegebenenfalls Fehlerkorrektur verwendet."
     },
     {
       "thema": "Hamming-Distanz",
       "frage": "Wie bestimmt man die Hamming-Distanz und was bedeutet sie?",
-      "antwort": "Antwort 33"
+      "antwort": "Die Hamming-Distanz zwischen zwei Codewörtern gibt an, an wie vielen Bitstellen sie sich unterscheiden. Man bestimmt sie, indem man die beiden Codewörter Bit für Bit vergleicht und die unterschiedlichen Stellen zählt."
     },
     {
       "thema": "Fehlererkennung/-korrektur",
       "frage": "Was ist der Unterschied zwischen Fehlererkennung und Fehlerkorrektur?",
-      "antwort": "Antwort 34"
+      "antwort": `Bei der Fehlererkennung wird nur festgestellt, ob ein Fehler aufgetreten ist, während bei der Fehlerkorrektur zusätzlich das ursprünglich gesendete Codewort bestimmt und der Fehler dadurch korrigiert wird.
+      
+      Bei einer Hamming-Distanz h können 
+      e Bit-Fehler korrigiert werden wenn gilt: h >= 2e+1 also e <= h-1/2
+      p Bit-Fehler erkannt werden, wenn gilt h >= f+1 also f <= h-1`
     },
     {
       "thema": "Reed-Solomon-Code",
