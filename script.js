@@ -254,18 +254,18 @@ const quizzes = [
     },
     {
       "thema": "FM & LTI",
-      "frage": "FM ist kein LTI-System, weil die Ausgangsgröße nicht linear vom Eingangssignal abhängt: Das Nachrichtensignal verändert die Frequenz bzw. die Phase innerhalb einer Cosinusfunktion, sodass das Superpositionsprinzip nicht erfüllt ist.",
-      "antwort": "Antwort 13"
+      "frage": "Welche Vorteile bietet die Frequenzmodulation gegenüber AM?",
+      "antwort": "FM ist kein LTI-System, weil die Ausgangsgröße nicht linear vom Eingangssignal abhängt: Das Nachrichtensignal verändert die Frequenz bzw. die Phase innerhalb einer Cosinusfunktion, sodass das Superpositionsprinzip nicht erfüllt ist."
     },
     {
       "thema": "FM vs. AM",
-      "frage": "Die Frequenzmodulation (FM) bietet gegenüber der Amplitudenmodulation (AM) den Vorteil, dass sie weniger empfindlich gegenüber Amplitudenstörungen und Rauschen ist, da die Information in der Frequenz und nicht in der Amplitude übertragen wird. Dadurch kann bei FM eine bessere Übertragungsqualität erreicht werden.",
-      "antwort": "Antwort 14"
+      "frage": "Welche Vorteile bietet die Frequenzmodulation gegenüber AM?",
+      "antwort": "Die Frequenzmodulation (FM) bietet gegenüber der Amplitudenmodulation (AM) den Vorteil, dass sie weniger empfindlich gegenüber Amplitudenstörungen und Rauschen ist, da die Information in der Frequenz und nicht in der Amplitude übertragen wird. Dadurch kann bei FM eine bessere Übertragungsqualität erreicht werden."
     },
     {
       "thema": "FM-Spektrum",
-      "frage": "FM hat theoretisch ein unendliches Spektrum, weil durch die Modulation sehr viele Seitenbänder entstehen. Praktisch werden jedoch die weiter außen liegenden Seitenbänder immer schwächer und enthalten nur noch wenig Leistung. Deshalb kann man sich auf die wesentlichen Frequenzanteile beschränken und das FM-Signal mit einer begrenzten Bandbreite übertragen.",
-      "antwort": "Antwort 15"
+      "frage": "Warum kann FM trotz theoretisch unendlichem Spektrum praktisch eingesetzt werden?",
+      "antwort": "FM hat theoretisch ein unendliches Spektrum, weil durch die Modulation sehr viele Seitenbänder entstehen. Praktisch werden jedoch die weiter außen liegenden Seitenbänder immer schwächer und enthalten nur noch wenig Leistung. Deshalb kann man sich auf die wesentlichen Frequenzanteile beschränken und das FM-Signal mit einer begrenzten Bandbreite übertragen."
     },
     {
       "thema": "Komplexes Basisband",
