@@ -393,37 +393,36 @@ Der Viterbi-Decoder nutzt das Trellisdiagramm, um aus den möglichen Pfaden den 
     {
       "thema": "Reed-Solomon-Code",
       "frage": "Wie funktioniert ein Reed-Solomon-Code?",
-      "antwort": "Antwort 35"
+      "antwort": "Ein Reed-Solomon-Code ist ein Blockcode, der aus mehreren Nutzsymbolen zusätzliche Prüfsymbole erzeugt. Diese Redundanz wird mathematisch aus den Nutzdaten gebildet und ermöglicht es dem Empfänger, fehlerhafte Symbole zu erkennen und abhängig von der Anzahl der Prüfsymbole auch zu korrigieren. Da Reed-Solomon mit Symbolen aus mehreren Bits arbeitet, eignet er sich besonders gut zur Korrektur von Bündelfehlern."
     },
     {
       "thema": "Punktierung",
       "frage": "Was ist Punktierung und wie beeinflusst sie die Coderate?",
-      "antwort": "Antwort 36"
+      "antwort": "Bei der Punktierung werden gezielt erzeugte Codebits nicht übertragen. Dadurch steigt die Coderate, aber die Redundanz und damit der Fehlerschutz nehmen ab."
     },
     {
       "thema": "Punktierte Bits",
       "frage": "Wie funktioniert die Wiederherstellung punktierter Bits im Empfänger?",
-      "antwort": "Antwort 37"
+      "antwort": "Bei der Wiederherstellung punktierter Bits im Empfänger werden die nicht übertragenen Bits durch Dummybits mit einem LLR von 0 ersetzt, da für diese Bits keine Information über den Bitwert oder dessen Zuverlässigkeit vorliegt."
     },
     {
       "thema": "Synchronisationsarten",
       "frage": "Welche Arten der Synchronisation sind in der Nachrichtentechnik relevant?",
-      "antwort": "Antwort 38"
+      "antwort": "In der Nachrichtentechnik sind insbesondere die Zeit-, Frequenz- und Phasensynchronisation relevant, damit der Empfänger das Signal zum richtigen Zeitpunkt und mit der richtigen Frequenz und Phase auswerten kann."
     },
     {
       "thema": "Burst-Erkennung",
       "frage": "Wie funktioniert die Burst-Erkennung bei WLAN?",
-      "antwort": "Antwort 39"
+      "antwort": "Bei WLAN funktioniert die Burst-Erkennung über die Short Training Sequence (STS) der Präambel. Da sich die STS periodisch wiederholt, korreliert der Empfänger das empfangene Signal mit einer zeitlich verzögerten Version. Bei einem hohen Korrelationswert erkennt der Empfänger, dass ein WLAN-Burst begonnen hat."
     },
     {
       "thema": "Korrelation",
       "frage": "Wie hilft die Korrelation bei der Frequenz- und Zeitsynchronisation?",
-      "antwort": "Antwort 40"
-    },
-    {
-      "thema": "STS",
-      "frage": "Was ist die „Short Training Sequence“ (STS) und wofür wird sie verwendet?",
-      "antwort": "Antwort 41"
+      "antwort": `Bei WLAN wird die Korrelation genutzt, weil sich die Short Training Sequence (STS) periodisch wiederholt. Die gleiche Sequenz erscheint dabei alle 16 Abtastwerte erneut.
+
+Der Empfänger vergleicht deshalb das aktuell empfangene Signal mit dem Signal, das um 16 Abtastwerte verzögert ist. Passen beide gut zusammen, ist die Korrelation groß. Dadurch kann der Empfänger erkennen, dass ein WLAN-Burst beginnt und den richtigen Zeitpunkt bestimmen → Zeitsynchronisation.
+
+Zusätzlich enthält die Korrelation eine Phaseninformation. Ein Frequenzversatz zwischen Sender und Empfänger führt dazu, dass zwischen zwei aufeinanderfolgenden STS-Wiederholungen eine Phasendifferenz entsteht. Aus dieser Phasendifferenz kann der Frequenzversatz bestimmt und korrigiert werden → Frequenzsynchronisation.`
     },
     {
       "thema": "Interleaving",
