@@ -245,31 +245,33 @@ const quizzes = [
     {
       "thema": "IQ-Demodulation",
       "frage": "Welche Vorteile bietet die IQ-Demodulation?",
-      "antwort": "Antwort 11"
+      "antwort": "Die IQ-Demodulation ermöglicht die gleichzeitige und getrennte Demodulation des In-Phase-Anteils (I) und des um 90° phasenverschobenen Quadratur-Anteils (Q). Dadurch können Amplitude und Phase eines Signals vollständig bestimmt und komplexe Modulationsverfahren wie QPSK und QAM demoduliert werden."
     },
     {
       "thema": "Frequenzmodulation",
       "frage": "Wie funktioniert die Frequenzmodulation mathematisch?",
-      "antwort": "Antwort 12"
+      "antwort": "Bei der Frequenzmodulation bestimmt das Nachrichtensignal die momentane Frequenz des Trägers. Da die Frequenz angibt, wie schnell sich die Phase über die Zeit ändert, wird das Nachrichtensignal integriert, um die daraus entstehende Phasenänderung zu bestimmen, mit der anschließend der zeitliche Verlauf des FM-Signals beschrieben wird."
     },
     {
       "thema": "FM & LTI",
-      "frage": "Warum ist FM kein LTI-System?",
+      "frage": "FM ist kein LTI-System, weil die Ausgangsgröße nicht linear vom Eingangssignal abhängt: Das Nachrichtensignal verändert die Frequenz bzw. die Phase innerhalb einer Cosinusfunktion, sodass das Superpositionsprinzip nicht erfüllt ist.",
       "antwort": "Antwort 13"
     },
     {
       "thema": "FM vs. AM",
-      "frage": "Welche Vorteile bietet die Frequenzmodulation gegenüber AM?",
+      "frage": "Die Frequenzmodulation (FM) bietet gegenüber der Amplitudenmodulation (AM) den Vorteil, dass sie weniger empfindlich gegenüber Amplitudenstörungen und Rauschen ist, da die Information in der Frequenz und nicht in der Amplitude übertragen wird. Dadurch kann bei FM eine bessere Übertragungsqualität erreicht werden.",
       "antwort": "Antwort 14"
     },
     {
       "thema": "FM-Spektrum",
-      "frage": "Warum kann FM trotz theoretisch unendlichem Spektrum praktisch eingesetzt werden?",
+      "frage": "FM hat theoretisch ein unendliches Spektrum, weil durch die Modulation sehr viele Seitenbänder entstehen. Praktisch werden jedoch die weiter außen liegenden Seitenbänder immer schwächer und enthalten nur noch wenig Leistung. Deshalb kann man sich auf die wesentlichen Frequenzanteile beschränken und das FM-Signal mit einer begrenzten Bandbreite übertragen.",
       "antwort": "Antwort 15"
     },
     {
       "thema": "Komplexes Basisband",
-      "frage": "Was ist das komplexe Basisbandmodell und warum wird es in Simulationen bevorzugt?",
+      "frage": `Das komplexe Basisbandmodell beschreibt ein Bandpasssignal durch ein komplexes Signal mit einem Realteil (I) und einem Imaginärteil (Q). Dadurch können die Informationen über Amplitude und Phase des ursprünglichen Bandpasssignals dargestellt werden, ohne den hochfrequenten Träger selbst simulieren zu müssen.
+      
+      Es wird in Simulationen bevorzugt, weil nur das komplexe Basisbandsignal verarbeitet werden muss und dadurch geringere Abtastraten und weniger Rechenaufwand erforderlich sind.`,
       "antwort": "Antwort 16"
     },
     {
