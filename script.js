@@ -444,8 +444,7 @@ Dadurch werden aus einem langen Fehlerblock viele einzelne Fehler. Diese können
     {
       "thema": "DVB vs. WLAN Interleaving",
       "frage": "Wie unterscheidet sich das Interleaving bei DVB-T von dem bei WLAN?",
-      "antwort": "Bei DVB-T wird Interleaving über längere Datenströme eingesetzt, um zusammenhängende Fehler durch Störungen oder Fading möglichst weit zu verteilen. Bei WLAN erfolgt das Interleaving dagegen paket- bzw. blockweise, da WLAN Daten in einzelnen Frames bzw. Bursts überträgt und nicht kontinuierlich wie ein Broadcastsystem.
-"
+      "antwort": "Bei DVB-T wird Interleaving über längere Datenströme eingesetzt, um zusammenhängende Fehler durch Störungen oder Fading möglichst weit zu verteilen. Bei WLAN erfolgt das Interleaving dagegen paket- bzw. blockweise, da WLAN Daten in einzelnen Frames bzw. Bursts überträgt und nicht kontinuierlich wie ein Broadcastsystem."
     },
     {
       "thema": "CSMA/CD vs. CSMA/CA",
@@ -457,22 +456,22 @@ CSMA/CA wird bei WLAN verwendet. Da Funkgeräte Kollisionen während des Sendens
     {
       "thema": "Kollisionserkennung",
       "frage": "Warum ist bei Funkkanälen keine Kollisionserkennung möglich?",
-      "antwort": "Antwort 47"
+      "antwort": "Bei Funkkanälen ist keine zuverlässige Kollisionserkennung möglich, weil ein Gerät während des Sendens sein eigenes Signal sehr viel stärker empfängt als ein gleichzeitig eintreffendes Signal eines anderen Senders. Dadurch kann es eine mögliche Kollision nicht sicher erkennen. Deshalb verwendet WLAN CSMA/CA, also die Kollisionsvermeidung."
     },
     {
       "thema": "ARQ",
       "frage": "Was bedeutet ARQ und wie funktioniert es?",
-      "antwort": "Antwort 48"
+      "antwort": "ARQ (Automatic Repeat Request) ist ein Verfahren zur Fehlerbehandlung, bei dem der Empfänger fehlerhafte Daten erkennt und dem Sender keine erfolgreiche Bestätigung gibt bzw. eine erneute Übertragung anfordert. Der Sender überträgt das fehlerhafte Datenpaket anschließend erneut."
     },
     {
       "thema": "Hybrid-ARQ",
       "frage": "Wie verbessert Hybrid-ARQ die Übertragungsqualität?",
-      "antwort": "Antwort 49"
+      "antwort": "Hybrid-ARQ verbessert die Übertragungsqualität, indem fehlerhafte Pakete erneut übertragen und die dabei empfangenen Softbits kombiniert werden; entweder wird dabei das gleiche Paket erneut gesendet und die Softbits werden kombiniert (Chase Combining), oder es werden zusätzlich neue Redundanzinformationen übertragen, die der Empfänger zur verbesserten Fehlerkorrektur nutzt (Incremental Redundancy)."
     },
     {
       "thema": "Backoff-Timer",
       "frage": "Welche Rolle spielt der „Backoff-Timer“ im Medium Access?",
-      "antwort": "Antwort 50"
+      "antwort": "Der Backoff-Timer sorgt beim Medium Access dafür, dass Stationen nach einem belegten Kanal oder einer Kollision nicht sofort gleichzeitig erneut senden. Jede Station wartet eine zufällig gewählte Zeit, bevor sie erneut versucht, auf das Übertragungsmedium zuzugreifen. Dadurch wird die Wahrscheinlichkeit weiterer Kollisionen verringert."
     }
   ]
 ];
