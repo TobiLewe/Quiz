@@ -427,27 +427,32 @@ Zusätzlich enthält die Korrelation eine Phaseninformation. Ein Frequenzversatz
     {
       "thema": "Interleaving",
       "frage": "Warum wird Interleaving eingesetzt?",
-      "antwort": "Antwort 42"
+      "antwort": `Interleaving wird eingesetzt, um zusammenhängende Fehler, sogenannte Burstfehler, über mehrere Codewörter bzw. Datenbereiche zu verteilen.
+
+Dadurch werden aus einem langen Fehlerblock viele einzelne Fehler. Diese können von der anschließenden Fehlerkorrektur, zum Beispiel einem Reed-Solomon- oder Faltungscode, deutlich besser korrigiert werden.`
     },
     {
       "thema": "Block-Interleaver",
       "frage": "Wie funktioniert ein Block-Interleaver?",
-      "antwort": "Antwort 43"
+      "antwort": "Ein Block-Interleaver schreibt die Daten zunächst zeilenweise in eine Matrix und liest sie anschließend spaltenweise wieder aus. Dadurch werden aufeinanderfolgende Bits im Datenstrom verteilt, sodass Burstfehler nach dem De-Interleaving auf einzelne Fehler verteilt werden und vom Fehlerkorrekturverfahren besser korrigiert werden können."
     },
     {
       "thema": "Energy Dispersal",
       "frage": "Was ist der Zweck des „Energy Dispersal“ Blocks im DVB-T?",
-      "antwort": "Antwort 44"
+      "antwort": "Der „Energy Dispersal“-Block im DVB-T bricht lange konstante Bitfolgen, beispielsweise viele aufeinanderfolgende 0en, auf. Dadurch wird verhindert, dass über längere Zeit ein konstanter I- bzw. Q-Wert gesendet wird, und die Energie des Signals wird gleichmäßiger über das Spektrum verteilt."
     },
     {
       "thema": "DVB vs. WLAN Interleaving",
-      "frage": "Wie unterscheidet sich das Interleaving bei DVB von dem bei WLAN?",
-      "antwort": "Antwort 45"
+      "frage": "Wie unterscheidet sich das Interleaving bei DVB-T von dem bei WLAN?",
+      "antwort": "Bei DVB-T wird Interleaving über längere Datenströme eingesetzt, um zusammenhängende Fehler durch Störungen oder Fading möglichst weit zu verteilen. Bei WLAN erfolgt das Interleaving dagegen paket- bzw. blockweise, da WLAN Daten in einzelnen Frames bzw. Bursts überträgt und nicht kontinuierlich wie ein Broadcastsystem.
+"
     },
     {
       "thema": "CSMA/CD vs. CSMA/CA",
       "frage": "Was ist der Unterschied zwischen CSMA/CD und CSMA/CA?",
-      "antwort": "Antwort 46"
+      "antwort": `CSMA/CD wird vor allem bei kabelgebundenen Netzwerken verwendet. Geräte erkennen dabei eine Kollision, nachdem sie passiert ist, und brechen die Übertragung ab.
+
+CSMA/CA wird bei WLAN verwendet. Da Funkgeräte Kollisionen während des Sendens nicht zuverlässig erkennen können, versucht CSMA/CA Kollisionen vorher zu vermeiden, zum Beispiel durch einen Backoff-Timer.`
     },
     {
       "thema": "Kollisionserkennung",
